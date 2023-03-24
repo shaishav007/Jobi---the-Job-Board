@@ -1,0 +1,25 @@
+.howItWorks{
+    background: $DarkGreen;
+
+    .wrapper{
+        background: $DarkGreen;
+    }
+}
+
+h3{
+    background: $DarkGreen;
+    color: $LightGrey;
+
+    @include setFonts('Garamond',2rem);
+    text-align: center;
+    
+}
+
+.howItWorksList{
+    @include setFlex(row,space-around,center,wrap);
+
+    li{
+        @include setFlex(column,center, center,nowrap);
+
+    }
+}

@@ -315,6 +315,102 @@ li {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.getOver50 {
+  background: #F5F5F5;
+}
+.getOver50 .flexParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.getOver50 .flexParent > * {
+  flex-basis: 50%;
+}
+
+.getOver50Content {
+  background: #F5F5F5;
+  padding: 2rem;
+}
+.getOver50Content h3 {
+  background: #F5F5F5;
+  color: #254135;
+  font-family: "Garamond";
+  font-size: 5.2rem;
+}
+.getOver50Content h4 {
+  background: #F5F5F5;
+  color: #31795A;
+  font-family: "Gordita";
+  font-size: 2rem;
+}
+.getOver50Content a {
+  text-decoration: none;
+  color: #D2F34C;
+  background: #31795A;
+  font-family: "Gordita";
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.getOver50Checklist {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.getOver50Checklist li {
+  background: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.howItWorks {
+  background: #254135;
+}
+.howItWorks .wrapper {
+  background: #254135;
+}
+
+h3 {
+  background: #254135;
+  color: #F5F5F5;
+  font-family: "Garamond";
+  font-size: 2rem;
+  text-align: center;
+}
+
+.howItWorksList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.howItWorksList li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 h1 {
   font-family: "Garamond";
   font-size: 9rem;

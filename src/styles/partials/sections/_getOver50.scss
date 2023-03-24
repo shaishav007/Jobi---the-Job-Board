@@ -1,0 +1,51 @@
+@import '../colorsAndFonts';
+.getOver50{
+    background: $LightGrey;
+
+
+    .flexParent{
+        @include setFlex(row,flex-start,flex-start,wrap);
+
+        &>*{
+            flex-basis:50%;
+        }
+    }
+}
+
+.getOver50Content{
+    background: $LightGrey;
+    padding: 2rem;
+    
+    h3{
+        background: $LightGrey;
+        color: $DarkGreen;
+        @include setFonts('Garamond',5.2rem);
+    }
+
+    h4{
+        background: $LightGrey;
+        color: $Green;
+        @include setFonts('Gordita',2rem);
+    }
+
+    a{
+        text-decoration: none;
+        color: $LimeGreen;
+        background: $Green;
+        @include setFonts('Gordita',2rem);
+        border-radius: 3rem;
+        padding: 1rem;
+        display: block;
+        width: fit-content;
+    }
+}
+
+.getOver50Checklist{
+    background: $LightGrey;
+    @include setFlex(column, flex-start,flex-start,nowrap);
+    li{
+        background: $LightGrey;
+        @include setFonts('Gordita',2rem);
+        font-weight: bold;
+    }
+}
