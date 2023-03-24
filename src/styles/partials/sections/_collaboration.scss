@@ -1,0 +1,38 @@
+@import '../colorsAndFonts';
+
+.collaboration{
+    background: $LightGrey;
+
+    .flexParent{
+        @include setFlex(row,space-around,center,wrap);
+        background: $LightGrey;
+
+        &>*{
+            flex-basis: 50%;
+        }
+    }
+
+}
+
+.collaborationContent{
+    background:$LightGrey;
+    padding-block: 3rem;
+    
+    h3{
+        color:$DarkGreen;
+        background: $LightGrey;
+        text-align: left;
+    }
+    
+    h4{
+        background:$LightGrey;
+        color: $Green;
+        @include setFonts('Garamond',2rem);
+    }
+
+    a{
+        background:$LightGrey;
+        color: black;
+        @include setFonts('Garamond',2rem);
+    }
+}

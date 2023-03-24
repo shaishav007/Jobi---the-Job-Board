@@ -17,7 +17,7 @@ const CompanyTestimonialComponent = (company) => {
             {company.data.testimonial}
         </div>
         <div className="author">
-            <span className='author'>{company.data.author}</span>
+            <span className='authorName'>{company.data.author}</span>
             <span className='authorRole'>{company.data.authorRole}</span>
         </div>
         <hr />

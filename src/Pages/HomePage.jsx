@@ -5,6 +5,8 @@ import MostDemandingComponent from '../Components/MostDemandingComponent';
 import TalentSliderItem
  from '../Components/TalentSliderItem';
 import CompanyTestimonialComponent from '../Components/CompanyTestimonialComponent';
+import JobiGuidesArticleComponent from '../Components/JobiGuidesArticleComponent';
+
 
 const HomePage = () => {
 
@@ -41,6 +43,27 @@ const HomePage = () => {
   ];
 
   const companyLogos=["google","shipBob","dribble","slack","vine","airbnb"];
+
+  const jobiGuidesArticles = [
+    {
+      imageUrl:"image url",
+      categories:"developer,code",
+      title:"Print, publishing qui visual layout mockups.",
+      author:"Rashed Kabir"
+    },
+    {
+      imageUrl:"image url",
+      categories:"developer,code",
+      title:"Print, publishing qui visual layout mockups.",
+      author:"Rashed Kabir"
+    },
+    {
+      imageUrl:"image url",
+      categories:"developer,code",
+      title:"Print, publishing qui visual layout mockups.",
+      author:"Rashed Kabir"
+    }
+  ];
 
   return (
     <div>
@@ -170,6 +193,35 @@ const HomePage = () => {
               return(<li>company Logo</li>)
             })
           }
+        </ul>
+        </div>
+      </section>
+      <section className="collaboration">
+        <div className="wrapper">
+        <div className="flexParent">
+        <div className="placeHolderImage">
+              placeholder image here
+        </div>
+        <div className="collaborationContent">
+          <h3>Collaboration with <br/> Top Brands.</h3>
+          <h4>We collaborate with  a number of top tier companies on imagining the future of work, have a look.</h4>
+          <a href='#' className='learnMore'>Learn More</a>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section className="jobiGuides">
+        <div className="wrapper">
+        <div className="jobiGuidesHeader">
+          <h3>Jobi Guides</h3>
+          <a href='#' className='exploreMore'>Explore More</a>
+        </div>
+        <ul className='jobiGuidesArticles'>
+          {jobiGuidesArticles.map((article)=>{
+            return(
+              <JobiGuidesArticleComponent data={article} />
+            )
+          })}
         </ul>
         </div>
       </section>

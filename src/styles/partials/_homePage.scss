@@ -3,6 +3,9 @@
 @import './sections/howItWorks';
 @import './sections/bestTalentedExpert';
 @import './sections/trusted';
+@import './sections/collaboration';
+@import './sections/jobiGuides';
+
 h1{
     
     @include setFonts('Garamond',9rem);

@@ -1,5 +1,37 @@
 @import './colorsAndFonts';
 
 .testimonialParent{
-    @include setFlex(column,flex-start,flex-start,nowrap)
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    @include setFlex(column,flex-start,flex-start,nowrap);
+
+    background: $LightGrey;
+
+    hr{
+        height: 1rem;
+        background-color: black;
+    }
+}
+
+.testimonial{
+    margin-block: 1rem;
+    background: $LightGrey;
+    @include setFonts('Gordita',2rem);
+}
+
+.authorName{
+    background: $LightGrey;
+    @include setFonts('Gordita',1rem);
+    font-weight: bold;
+}
+
+.authorRole{
+    background: $LightGrey;
+    @include setFonts('Gordita',1rem);
+}
+
+.rating{
+    background: $LightGrey;
+    @include setFonts('Gordita',1rem);
 }
