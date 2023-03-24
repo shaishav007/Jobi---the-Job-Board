@@ -1,0 +1,43 @@
+@import './colorsAndFonts';
+footer{
+    background: $LightGrey;
+}
+
+.footerHeader{
+    @include setFlex(row,space-around,center,wrap);
+    background:$LightGrey;
+
+    .buttons{
+        background: $LightGrey;
+        padding: 1rem;
+        @include setFlex(row,space-around,center,wrap);
+    }
+}
+
+.titleText{
+    background: $LightGrey;
+
+    h3{
+        background: $LightGrey;
+        color: $DarkGreen;
+    }
+    h4{
+        background: $LightGrey;
+        color: $Green;
+        @include setFonts('Gordita',2rem);
+    }
+}
+
+.footerLists{
+    @include setFlex(row,space-around,center,wrap);
+    background: $LightGrey;
+}
+.footerList{
+    @include setFlex(column,space-around,center,nowrap);
+    background: $LightGrey;
+}
+
+.copyRightSection{
+    @include setFlex(row, space-between,center,wrap);
+    background: $LightGrey;
+}

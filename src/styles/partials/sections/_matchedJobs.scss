@@ -1,0 +1,49 @@
+@import '../colorsAndFonts';
+
+.matchedJobs{
+    background: $LightGrey;
+
+    .flexParent{
+        @include setFlex(row,space-around,center,wrap);
+        background: $LightGrey;
+
+        &>*{
+            flex-basis: 50%;
+        }
+    }
+
+}
+
+.matchedJobsContent{
+    background:$LightGrey;
+    padding-block: 3rem;
+    
+    h3{
+        color:$DarkGreen;
+        background: $LightGrey;
+        text-align: left;
+
+        span{
+            color: $LimeGreen;
+            background: $DarkGreen;
+        }
+    }
+    
+    h4{
+        background:$LightGrey;
+        color: $Green;
+        @include setFonts('Garamond',2rem);
+    }
+
+    a{
+        background:$LimeGreen;
+        color: black;
+
+        padding: 1rem;
+        border-radius: 2rem;
+
+        @include setFonts('Gordita',2rem);
+
+        text-decoration: none;
+    }
+}

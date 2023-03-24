@@ -649,6 +649,62 @@ h3 {
   font-size: 2rem;
 }
 
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.articleParent {
+  background: #F5F5F5;
+}
+
+.imageContainer {
+  background: lightblue;
+  height: 25rem;
+}
+
+.categories {
+  background: #F5F5F5;
+  color: #31795A;
+  padding-block: 1rem;
+  font-family: "Gordita";
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.title {
+  background: #F5F5F5;
+  padding-block: 1rem;
+  font-family: "Gordita";
+  font-size: 1rem;
+}
+
+.author {
+  background: #F5F5F5;
+  padding-block: 1rem;
+  font-family: "Gordita";
+  font-size: 1rem;
+}
+.author .name {
+  background: #F5F5F5;
+  padding-block: 1rem;
+  font-family: "Gordita";
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
 .jobiGuides {
   background: #F5F5F5;
 }
@@ -684,6 +740,129 @@ h3 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.matchedJobs {
+  background: #F5F5F5;
+}
+.matchedJobs .flexParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F5F5F5;
+}
+.matchedJobs .flexParent > * {
+  flex-basis: 50%;
+}
+
+.matchedJobsContent {
+  background: #F5F5F5;
+  padding-block: 3rem;
+}
+.matchedJobsContent h3 {
+  color: #254135;
+  background: #F5F5F5;
+  text-align: left;
+}
+.matchedJobsContent h3 span {
+  color: #D2F34C;
+  background: #254135;
+}
+.matchedJobsContent h4 {
+  background: #F5F5F5;
+  color: #31795A;
+  font-family: "Garamond";
+  font-size: 2rem;
+}
+.matchedJobsContent a {
+  background: #D2F34C;
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-family: "Gordita";
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+footer {
+  background: #F5F5F5;
+}
+
+.footerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F5F5F5;
+}
+.footerHeader .buttons {
+  background: #F5F5F5;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titleText {
+  background: #F5F5F5;
+}
+.titleText h3 {
+  background: #F5F5F5;
+  color: #254135;
+}
+.titleText h4 {
+  background: #F5F5F5;
+  color: #31795A;
+  font-family: "Gordita";
+  font-size: 2rem;
+}
+
+.footerLists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F5F5F5;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #F5F5F5;
+}
+
+.copyRightSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F5F5F5;
 }
 
 h1 {

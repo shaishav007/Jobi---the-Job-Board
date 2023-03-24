@@ -6,6 +6,7 @@ import TalentSliderItem
  from '../Components/TalentSliderItem';
 import CompanyTestimonialComponent from '../Components/CompanyTestimonialComponent';
 import JobiGuidesArticleComponent from '../Components/JobiGuidesArticleComponent';
+import FooterComponent from '../Components/FooterComponent';
 
 
 const HomePage = () => {
@@ -225,6 +226,21 @@ const HomePage = () => {
         </ul>
         </div>
       </section>
+      <section className='matchedJobs'>
+      <div className="wrapper">
+        <div className="flexParent">
+        <div className="placeHolderImage">
+              placeholder image here
+        </div>
+        <div className="matchedJobsContent">
+          <h3>Get your <br/> <span>Matched Jobs</span> In a <br/> few minutes.</h3>
+          <h4>Find your dream job & earn more from world leading brands. Upload your CV now.</h4>
+          <a href='#' className='uploadCV'>Upload your CV</a>
+        </div>
+        </div>
+        </div>
+      </section>
+      <FooterComponent />
     </div>
   )
 }

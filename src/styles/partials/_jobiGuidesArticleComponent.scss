@@ -1,0 +1,37 @@
+@import './colorsAndFonts';
+.articleParent{
+    background:$LightGrey;
+}
+
+.imageContainer{
+    background:lightblue;
+    height: 25rem;
+}
+
+.categories{
+    background:$LightGrey;
+    color: $Green;
+    padding-block: 1rem;
+    @include setFonts('Gordita',1rem);
+    text-transform:capitalize;
+}
+
+.title{
+    background: $LightGrey;
+    padding-block: 1rem;
+    @include setFonts('Gordita',1rem);
+}
+
+.author{
+    background: $LightGrey;
+    padding-block: 1rem;
+    @include setFonts('Gordita',1rem);
+
+    .name{
+        background: $LightGrey;
+        padding-block: 1rem;
+        @include setFonts('Gordita',1rem);
+        font-weight: bold;
+        display: inline-block;
+    }
+}
