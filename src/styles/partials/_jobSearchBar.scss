@@ -1,0 +1,37 @@
+@import './colorsAndFonts';
+.searchInput{
+    @include setFlex(row,center,center,wrap);
+
+
+    @include setFonts('Gordita',2rem);
+  }
+  
+  .searchInput>*{
+    flex-basis:100%;
+  }
+  .submit{
+     
+     flex-basis:max(10rem,50%);
+     
+    flex-grow:1;
+    flex-shrink: 1;
+     background: $LimeGreen;
+  }
+  
+  .searchBar,.category{
+    background: $LightGrey;
+    @include setFlex(column,flex-start,flex-start,wrap);
+
+    flex-basis:max(20rem,100%);
+    border:none;
+    flex-grow:1;
+    label{
+      background: $LightGrey;
+      flex-grow:1;
+    }
+    input{
+      border: none;
+      background: $LightGrey;
+      flex-grow:4;
+    }
+  }

@@ -1,0 +1,36 @@
+@import './colorsAndFonts';
+*{
+    border:1px solid black;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+nav{
+    background:$DarkGreen;
+    color: white;
+
+    list-style: none;
+    
+    @include setFlex(horizontal,space-between,center,wrap);
+    @include setFonts('Gordita',2rem);
+    
+}
+ul{
+    padding:0;
+    display: flex;
+    list-style:none;
+}
+.menu{
+    padding:0;
+}
+.loginMenu{
+    padding:0;
+}
+
+li{
+    padding:5px;
+    margin:5px;
+}

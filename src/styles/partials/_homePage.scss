@@ -1,0 +1,35 @@
+@import './sections/mostDemandingSection';
+h1{
+    
+    @include setFonts('Garamond',9rem);
+    
+    span{
+        display: block;
+    }
+}
+
+.findAndHire{
+    color: $LightGrey;
+}
+.top3{
+    color:$LimeGreen;
+}
+.onJobi{
+    color:orange;
+}
+
+h2{
+    color: $LightGrey;
+    @include setFonts('Gordita',2.4rem);
+}
+
+.belowSearchBar{
+    color: $Green;
+    @include setFonts('Gordita',2.4rem);
+}
+
+.popular{
+    color: $LightGrey;
+    @include setFonts('Gordita',2.4rem);
+    font-weight: bold;
+}

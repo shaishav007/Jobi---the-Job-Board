@@ -1,0 +1,422 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+* {
+  border: 1px solid black;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  background: #254135;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Gordita";
+  font-size: 2rem;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu {
+  padding: 0;
+}
+
+.loginMenu {
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.mostDemanding {
+  background: #F5F5F5;
+}
+
+.mostDemandingHeader {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mostDemandingHeader h3 {
+  background: #F5F5F5;
+  color: #254135;
+  font-family: "Garamond";
+  font-size: 7.2rem;
+}
+.mostDemandingHeader h4 {
+  background: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.mostDemandingHeader h4 > * {
+  background: #F5F5F5;
+}
+
+.mostDemandingList {
+  background: #F5F5F5;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Garamond";
+  font-size: 9rem;
+}
+h1 span {
+  display: block;
+}
+
+.findAndHire {
+  color: #F5F5F5;
+}
+
+.top3 {
+  color: #D2F34C;
+}
+
+.onJobi {
+  color: orange;
+}
+
+h2 {
+  color: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+}
+
+.belowSearchBar {
+  color: #31795A;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+}
+
+.popular {
+  color: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.searchInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Gordita";
+  font-size: 2rem;
+}
+
+.searchInput > * {
+  flex-basis: 100%;
+}
+
+.submit {
+  flex-basis: max(10rem, 50%);
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: #D2F34C;
+}
+
+.searchBar, .category {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-basis: max(20rem, 100%);
+  border: none;
+  flex-grow: 1;
+}
+.searchBar label, .category label {
+  background: #F5F5F5;
+  flex-grow: 1;
+}
+.searchBar input, .category input {
+  border: none;
+  background: #F5F5F5;
+  flex-grow: 4;
+}
+
+* {
+  background: #254135;
+}
+
+#root {
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: min(100%, 120rem);
+  margin: 0 auto;
+}/*# sourceMappingURL=Main.css.map */

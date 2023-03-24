@@ -1,0 +1,35 @@
+@import '../colorsAndFonts';
+.mostDemanding{
+    background: $LightGrey;
+}
+
+.mostDemandingHeader{
+    background: $LightGrey;
+    
+    @include setFlex(row,space-between,center,wrap);
+
+    h3{
+        background: $LightGrey;
+
+        color: $DarkGreen;
+        @include setFonts('Garamond',7.2rem);
+
+       
+    }
+    h4{
+        background: $LightGrey;
+        @include setFonts('Gordita',2rem);
+
+        @include setFlex(column, flex-start,flex-start,wrap);
+         
+        &>*{
+        background: $LightGrey;
+        }
+    
+    }
+}
+
+.mostDemandingList{
+    background: $LightGrey;
+    margin: 0;
+}
