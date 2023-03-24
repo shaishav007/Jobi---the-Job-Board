@@ -1,6 +1,8 @@
 @import './sections/mostDemandingSection';
 @import './sections/getOver50';
 @import './sections/howItWorks';
+@import './sections/bestTalentedExpert';
+@import './sections/trusted';
 h1{
     
     @include setFonts('Garamond',9rem);

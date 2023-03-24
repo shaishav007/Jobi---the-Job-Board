@@ -1,0 +1,36 @@
+@import '../colorsAndFonts';
+@import '../companyTestimonialComponent';
+.trusted{
+    background: $LightGrey;
+}
+.trustedHeader{
+    background: $LightGrey;
+    @include setFlex(row,space-around,flex-end,wrap);
+    h3{
+        background: $LightGrey;
+        color: $DarkGreen;
+    }
+}
+.companyTestimonialButtonWidget{
+    background: $LightGrey;
+    padding: 1rem;
+}
+
+.companyTestimonials{
+    background: $LightGrey;
+    margin: 0;
+    @include setFlex(row,space-around,center,nowrap);
+    
+    &>*{
+        flex-basis: 40%;
+    }
+}
+
+.companyList{
+    background: $LightGrey;
+    margin: 0;
+    @include setFlex(row,space-around,center,nowrap);
+    &>*{
+        flex-basis: 40%;
+    }
+}

@@ -2,10 +2,46 @@ import React from 'react';
 import NavbarComponent from '../Components/NavbarComponent';
 import JobSearchBarComponent from '../Components/JobSearchBarComponent';
 import MostDemandingComponent from '../Components/MostDemandingComponent';
+import TalentSliderItem
+ from '../Components/TalentSliderItem';
+import CompanyTestimonialComponent from '../Components/CompanyTestimonialComponent';
 
 const HomePage = () => {
 
   const mostDemandingCategories = ["UI/UX Design","Marketing","Development","Telemarketing","Editing","Accounting"];
+
+  const talentSliderEntries = [
+    {name:"Jula Ake",
+    occupation:"Product Designer"},
+    {name:"Jula Ake",
+    occupation:"Product Designer"},
+    {name:"Jula Ake",
+    occupation:"Product Designer"},
+    {name:"Jula Ake",
+    occupation:"Product Designer"}
+  ]
+
+  const companyTestimonials=[
+    {
+      name:"Monday.com",
+      logoUrl:"Monday logo",
+      testimonial:"Seattle Opera simplifies performance planning with deski eSignature",
+      author:"Rashed Kabir",
+      authorRole:"Lead Designer",
+      stars:4.5
+    },
+    {
+      name:"Monday.com",
+      logoUrl:"Monday logo",
+      testimonial:"Seattle Opera simplifies performance planning with deski eSignature",
+      author:"Rashed Kabir",
+      authorRole:"Lead Designer",
+      stars:4.5
+    }
+  ];
+
+  const companyLogos=["google","shipBob","dribble","slack","vine","airbnb"];
+
   return (
     <div>
       <NavbarComponent />
@@ -88,6 +124,53 @@ const HomePage = () => {
                 <h5>Apply & get your preferable jobs with all the requirements and get it. </h5>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="bestTalentedExpert">
+        <div className="wrapper">
+          <div className="bestTalentedHeader">
+            <h3>Find the best talented<br/>expert in jobi.</h3>
+            <div className="talentButtonWidget">
+              <button className="leftArrow">leftArrow</button><button className="rightArrow">rightArrow</button>
+            </div>
+            
+          </div>
+          <ul className="talentSlider">
+            {
+              talentSliderEntries.map((person)=>{
+                return(
+                  <li><TalentSliderItem data={person}/>
+                  </li>
+                )
+              })
+            }
+            </ul>
+        </div>
+
+      </section>
+      <section className="trusted">
+        <div className="wrapper">
+    
+        <div className="trustedHeader">
+            <h3>Trusted By Leading <br/> Starups</h3>
+            <div className="companyTestimonialButtonWidget">
+            <button className="leftArrow">leftArrow</button><button className="rightArrow">rightArrow</button>
+            </div>
+        </div>
+        <ul className="companyTestimonials">
+          {
+            companyTestimonials.map((company)=>{
+              return(<li><CompanyTestimonialComponent data={company}/></li>)
+            })
+          }
+        </ul>
+        <ul className="companyList">
+          {
+            companyLogos.map((company)=>{
+              return(<li>company Logo</li>)
+            })
+          }
+        </ul>
         </div>
       </section>
     </div>

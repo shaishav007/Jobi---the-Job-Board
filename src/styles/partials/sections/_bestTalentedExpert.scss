@@ -1,0 +1,62 @@
+@import '../colorsAndFonts';
+.bestTalentedExpert{
+    background: $LightGrey;
+
+    
+}
+
+.bestTalentedHeader{
+    background: $LightGrey;
+
+    @include setFlex(row,space-around,flex-end,flex);
+
+    h3{
+        background: $LightGrey;
+        color: $DarkGreen;
+        
+    }
+}
+
+.talentButtonWidget{
+    background: $LightGrey;
+    color: $LightGrey;
+    padding: 1rem;
+}
+
+.talentSlider{
+    background: $LightGrey;
+    @include setFlex(row,space-around,center,nowrap);
+
+    margin: 0;
+
+    &>*{
+        flex-basis: 20%;
+    }
+    
+    li{
+        background: $LightGrey;
+       
+    }
+}
+
+.personContainer{
+    background:$LightGrey;
+    text-align: center;
+    h4{
+        background: $LightGrey;
+        @include setFonts('Gordita',2rem);
+        margin: 0;
+        font-weight: bold;
+    }
+    h5{
+         background: $LightGrey;
+         @include setFonts('Gordita',1rem);
+         margin:0;
+
+    }
+}
+.personImage{
+    height: 25rem;
+    background: lightblue;
+    border-radius: 40%;
+}

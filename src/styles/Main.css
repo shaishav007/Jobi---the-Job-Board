@@ -392,7 +392,7 @@ h3 {
   background: #254135;
   color: #F5F5F5;
   font-family: "Garamond";
-  font-size: 2rem;
+  font-size: 5.2rem;
   text-align: center;
 }
 
@@ -403,12 +403,170 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
 }
+.howItWorksList > * {
+  flex-basis: 20%;
+}
 .howItWorksList li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+}
+.howItWorksList h4 {
+  font-family: "Gordita";
+  font-size: 1rem;
+  color: #F5F5F5;
+  margin-block: 1rem;
+}
+.howItWorksList h5 {
+  font-family: "Gordita";
+  font-size: 1rem;
+  color: #31795A;
+  margin-block: 1rem;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.bestTalentedExpert {
+  background: #F5F5F5;
+}
+
+.bestTalentedHeader {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: flex;
+}
+.bestTalentedHeader h3 {
+  background: #F5F5F5;
+  color: #254135;
+}
+
+.talentButtonWidget {
+  background: #F5F5F5;
+  color: #F5F5F5;
+  padding: 1rem;
+}
+
+.talentSlider {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+.talentSlider > * {
+  flex-basis: 20%;
+}
+.talentSlider li {
+  background: #F5F5F5;
+}
+
+.personContainer {
+  background: #F5F5F5;
+  text-align: center;
+}
+.personContainer h4 {
+  background: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+.personContainer h5 {
+  background: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 1rem;
+  margin: 0;
+}
+
+.personImage {
+  height: 25rem;
+  background: lightblue;
+  border-radius: 40%;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.testimonialParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.trusted {
+  background: #F5F5F5;
+}
+
+.trustedHeader {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.trustedHeader h3 {
+  background: #F5F5F5;
+  color: #254135;
+}
+
+.companyTestimonialButtonWidget {
+  background: #F5F5F5;
+  padding: 1rem;
+}
+
+.companyTestimonials {
+  background: #F5F5F5;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.companyTestimonials > * {
+  flex-basis: 40%;
+}
+
+.companyList {
+  background: #F5F5F5;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.companyList > * {
+  flex-basis: 40%;
 }
 
 h1 {

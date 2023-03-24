@@ -1,0 +1,5 @@
+@import './colorsAndFonts';
+
+.testimonialParent{
+    @include setFlex(column,flex-start,flex-start,nowrap)
+}
