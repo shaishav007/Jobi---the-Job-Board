@@ -954,6 +954,62 @@ h2 {
   flex-grow: 4;
 }
 
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.jobListingHeader .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.jobListingHeader h1 {
+  color: #F5F5F5;
+  text-transform: capitalize;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.jobs {
+  background: #F5F5F5;
+}
+.jobs .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.filters {
+  flex-basis: 20%;
+  background: #F5F5F5;
+}
+.filters > * {
+  background-color: #F5F5F5;
+}
+
+.jobCardsContainer {
+  flex-basis: 80%;
+  background: #F5F5F5;
+}
+
+.jobCards {
+  background: #F5F5F5;
+}
+
 * {
   background: #254135;
 }

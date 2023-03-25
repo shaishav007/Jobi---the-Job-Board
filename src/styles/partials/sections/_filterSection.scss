@@ -1,0 +1,29 @@
+@import '../colorsAndFonts';
+
+.jobs{
+    background: $LightGrey;
+    .wrapper{
+        @include setFlex(row,flex-start,flex-start,wrap);
+
+    }
+}
+
+.filters{
+    flex-basis: 20%;
+
+    background: $LightGrey;
+
+    &>*{
+        background-color: $LightGrey;
+        
+    }
+}
+
+.jobCardsContainer{
+    flex-basis: 80%;
+    background: $LightGrey;
+}
+
+.jobCards{
+    background: $LightGrey;
+}

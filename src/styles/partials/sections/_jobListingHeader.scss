@@ -1,0 +1,15 @@
+@import '../colorsAndFonts';
+
+.jobListingHeader{
+    
+    .wrapper{
+        @include setFlex(column,center,center,wrap);
+    }
+
+    h1{
+        color: $LightGrey;
+        text-transform: capitalize;
+    }
+
+    
+}
