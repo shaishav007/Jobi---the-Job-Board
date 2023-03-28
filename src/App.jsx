@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import JobListingPage from './Pages/JobListingPage';
 import JobDetailPage from './Pages/JobDetailPage';
+import Page404 from './Pages/Page404';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/jobs/' element={<JobListingPage/>}/>
         <Route path='/jobs/:jobID' element={<JobDetailPage/>}/>
+        <Route path='/*' element={<Page404/>}/>  
       </Routes>
     </div>
   )

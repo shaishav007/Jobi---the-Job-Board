@@ -229,10 +229,6 @@ html {
   font-family: "Garamond";
   src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
 }
-* {
-  border: 1px solid black;
-}
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -1006,12 +1002,119 @@ h2 {
   background: #F5F5F5;
 }
 
-.jobCards {
+.JobCards {
   background: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.JobCards > * {
+  flex-basis: 45%;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.jobDetailsHeader {
+  text-align: center;
+  color: #F5F5F5;
+}
+.jobDetailsHeader h1 {
+  font-family: "Garamond";
+  font-size: 5.2rem;
+}
+.jobDetailsHeader h2 {
+  font-family: "Gordita";
+  font-size: 2rem;
+  font-weight: regular;
+}
+
+.jobData {
+  background: #F5F5F5;
+}
+.jobData .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: #F5F5F5;
+}
+
+.descriptionContainer {
+  background: #F5F5F5;
+  flex-basis: 65%;
+}
+.descriptionContainer > * {
+  background: #F5F5F5;
+}
+
+.Summary {
+  background: #F5F5F5;
+  flex-basis: 25%;
+}
+.Summary > * {
+  background: #F5F5F5;
+}
+.Summary h4 {
+  background: #F5F5F5;
+}
+
+.jobResponsibilities, .requiredSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.jobResponsibilities > *, .requiredSkills > * {
+  background: #F5F5F5;
+}
+
+.summaryList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.summaryList > * {
+  flex-basis: 45%;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+}
+.content404Container {
+  background: #F5F5F5;
+}
+.content404Container .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content404Container .wrapper > * {
+  background: #F5F5F5;
+  flex-basis: 50%;
 }
 
 * {
   background: #254135;
+  outline: 1px solid black;
 }
 
 #root {

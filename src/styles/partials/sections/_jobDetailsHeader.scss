@@ -1,0 +1,16 @@
+@import '../colorsAndFonts';
+
+.jobDetailsHeader{
+    text-align: center;
+    color: $LightGrey;
+
+    h1{
+        @include setFonts('Garamond',5.2rem);
+    }
+
+    h2{
+        @include setFonts('Gordita',2rem);
+        font-weight: regular;
+    }
+}
+

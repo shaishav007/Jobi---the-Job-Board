@@ -21,9 +21,14 @@
 
 .jobCardsContainer{
     flex-basis: 80%;
-    background: $LightGrey;
+    background:$LightGrey;
 }
 
-.jobCards{
-    background: $LightGrey;
+.JobCards{
+    background:$LightGrey;
+    @include setFlex(row,flex-start,flex-start,wrap);
+
+    &>*{
+        flex-basis: 45%;
+    }
 }

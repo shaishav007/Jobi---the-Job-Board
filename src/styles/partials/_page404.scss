@@ -1,0 +1,12 @@
+@import './colorsAndFonts';
+.content404Container{
+    background: $LightGrey;
+
+    .wrapper{
+        @include setFlex(row,flex-start,flex-start,wrap);
+        &>*{
+            background: $LightGrey;
+            flex-basis: 50%;
+        }
+    }
+}

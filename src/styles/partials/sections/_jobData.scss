@@ -1,0 +1,49 @@
+.jobData{
+
+    background: $LightGrey;
+    .wrapper{
+        @include setFlex(row,flex-start,flex-start,wrap);
+            background: $LightGrey;
+
+            
+    }
+
+}
+
+.descriptionContainer{
+    background: $LightGrey;
+    flex-basis: 65%;
+
+    &>*{
+        background: $LightGrey;
+    }
+}
+
+.Summary{
+    background: $LightGrey;
+    flex-basis: 25%;
+
+    &>*{
+        background: $LightGrey;
+    }
+
+    h4{
+        background: $LightGrey;
+    }
+}
+
+.jobResponsibilities,.requiredSkills{
+    @include setFlex(column,flex-start,flex-start,wrap);
+
+    &>*{
+        background:$LightGrey;
+    }
+}
+
+.summaryList{
+    @include setFlex(row,flex-start,flex-start,wrap);
+
+    &>*{
+        flex-basis: 45%;
+    }
+}
