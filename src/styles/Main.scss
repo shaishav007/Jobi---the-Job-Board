@@ -6,11 +6,11 @@
 @import './partials/jobDetails';
 @import './partials/page404';
 *{
-    background: $DarkGreen;
     outline:1px solid black;
     
     
 }
+
 
 
 #root{
@@ -21,6 +21,6 @@ html{
     font-size:62.5%;
 }
 .wrapper{
-    width: min(100%,120rem);
+    width: min(100%,150rem);
     margin: 0 auto;
 }

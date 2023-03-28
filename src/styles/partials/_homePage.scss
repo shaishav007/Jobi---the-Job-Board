@@ -10,10 +10,43 @@
 
 h1{
     
-    @include setFonts('Garamond',9rem);
-    
+    @include setFonts('Garamond',5.6rem);
+    background: transparent;
     span{
         display: block;
+    }
+}
+
+
+.homePageHeader{
+    position: relative;
+    background: $DarkGreen;
+    height: clamp(60rem, 150rem - 150vw, 80rem);;
+
+    .wrapper{
+        @include setFlex(column, flex-start,flex-start,wrap);
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
+    &>*{
+        position: relative;
+        z-index: 10;
+    }
+
+    .absoluteShapeContainer{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        z-index: 0;
+        width: 44.5%;
+        height: auto;
+
+        img{
+            width: 100%;
+        }
+
+        @include breakpoint(1120px){
+            display: none;
+        }
     }
 }
 
@@ -30,15 +63,16 @@ h1{
 h2{
     color: $LightGrey;
     @include setFonts('Gordita',2.4rem);
+    width: fit-content;
 }
 
 .belowSearchBar{
     color: $Green;
-    @include setFonts('Gordita',2.4rem);
+    @include setFonts('Gordita',1.6rem);
 }
 
 .popular{
     color: $LightGrey;
-    @include setFonts('Gordita',2.4rem);
+    @include setFonts('Gordita',1.6rem);
     font-weight: bold;
 }

@@ -26,7 +26,7 @@ const NavbarComponent = () => {
                     </ul>
                 </li>
             </ul>
-            <ul>
+            <ul className='scribble'>
                 <li><img src={Images.scribble} alt='meaningless scribble' /></li>
             </ul>
 
@@ -46,8 +46,8 @@ const NavbarComponent = () => {
             </button>
             <ul className={
                 leftMenuOpen?
-                'leftMenu closed':
-                'leftMenu'
+                'leftMenu ':
+                'leftMenu closed'
             }>
                 <li className='categoryButton'><img src={Images.categoryIcon} alt=' '/> category</li>
                 <li>
@@ -61,7 +61,7 @@ const NavbarComponent = () => {
                 </li>
                 </ul>
             </div>
-            <ul>
+            <ul className='scribble'>
                 <li><img src={Images.scribble} alt='meaningless scribble' /></li>
             </ul>
             <div className="rightMenu">
@@ -72,8 +72,8 @@ const NavbarComponent = () => {
             </button>
             <ul className={
                 loginMenuOpen?
-                'loginMenu closed':
-                'loginMenu'
+                'loginMenu ':
+                'loginMenu closed'
             }>
                 <li>Post Job</li>
                 <li className="loginText">Login</li>

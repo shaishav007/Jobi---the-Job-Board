@@ -1,37 +1,79 @@
 @import './colorsAndFonts';
-.searchInput{
-    @include setFlex(row,center,center,wrap);
+.searchbarParent{
+  width: 100%;
+  @include setFlex(row,flex-start,center,wrap);
+  position: relative;
+  z-index: 100;
+  margin-block: 1rem;
 
+  
+}
 
-    @include setFonts('Gordita',2rem);
+.searchInputForm{
+  
+  border-radius: 1rem;
+  width: 100%;
+  @include setFlex(row,flex-start,center,nowrap);
+  
+  @include setFonts('Gordita',1.6rem);
+
+  @include breakpoint(720px){
+    @include setFlex(column,flex-start,flex-start,nowrap);
+
+  }
+
+  
+  
+}
+
+.occupation,.category{
+  background: $LightGrey;
+  padding: 1rem;
+  @include setFlex(column,flex-start,flex-start,wrap)
+}
+
+.occupation{
+  width: 35%;
+  border-radius: 1rem 0 0 1rem;
+  color: $Green;
+
+  @include breakpoint(720px){
+    width: 100%;
+
+    border-radius: 1rem 1rem 0 0 ;
+    &>*{
+      width: 100%;
+    }
   }
   
-  .searchInput>*{
-    flex-basis:100%;
+}
+.category{
+  color: $Green;
+  width: clamp(230px,25%,300px);
+
+  @include breakpoint(720px){
+    width: 100%;
+
+    &>*{
+      width: 100%;
+    }
   }
-  .submit{
-     
-     flex-basis:max(10rem,50%);
-     
-    flex-grow:1;
-    flex-shrink: 1;
-     background: $LimeGreen;
+}
+
+.submit{
+  background: $LimeGreen;
+  width: clamp(150px,15%,250px);
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 0;
+
+  @include setFonts('Gordita',1.6rem);
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @include breakpoint(720px){
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    
   }
   
-  .searchBar,.category{
-    background: $LightGrey;
-    @include setFlex(column,flex-start,flex-start,wrap);
-
-    flex-basis:max(20rem,100%);
-    border:none;
-    flex-grow:1;
-    label{
-      background: $LightGrey;
-      flex-grow:1;
-    }
-    input{
-      border: none;
-      background: $LightGrey;
-      flex-grow:4;
-    }
-  }
+}

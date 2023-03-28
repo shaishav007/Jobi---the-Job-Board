@@ -5,6 +5,11 @@
     margin:0 auto;
 }
 
+.navbarParent{
+    background: $DarkGreen;
+    
+}
+
 nav{
     background:$DarkGreen;
     color: $LightGrey;
@@ -84,20 +89,35 @@ li{
     }
 }
 .smallScreenMenu{
+    &>*{
+        background: $DarkGreen;
+    }
     padding-block: 1%;
     width: 100%;
     display: none;
-    
+    position: relative;
     top:0%;
     @include breakpoint(1150px){
         @include setFlex(row,space-between,flex-start,nowrap)
     }
 }
 
-.leftMenu{
-    @include setFlex(column,flex-start,flex-start,wrap);
 
+.leftMenuContainer{
+    position: relative;
+    background: $DarkGreen;
+
+    &>*{
+        background: $DarkGreen;
+    }
+}
+.leftMenu{
     
+    
+    
+    @include setFlex(column,flex-start,flex-start,wrap);
+    position: absolute;
+    z-index: 1000;
     transform: translateY(-5%);
 
     transition: scale  ease-in-out 1000ms;
@@ -109,11 +129,13 @@ li{
 
 .loginMenu{
     @include setFlex(column-reverse,flex-start,flex-end,wrap);
-
+    background: $DarkGreen;
+    position: absolute;
+    z-index: 1000;
     transition: scale  ease-in-out 1000ms;
 
    
-    transform: translateY(0%);
+    transform: translateY(25%);
 }
 .closed{
     transform:scale(0);
@@ -122,6 +144,12 @@ li{
 
 .rightMenu{
     @include setFlex(column,flex-start,flex-end,wrap);
+    position: relative;
+    background: $DarkGreen;
+
+    &>*{
+        background: $DarkGreen;
+    }
 }
 
 .hamburgerButton{

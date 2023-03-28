@@ -7,6 +7,7 @@ import TalentSliderItem
 import CompanyTestimonialComponent from '../Components/CompanyTestimonialComponent';
 import JobiGuidesArticleComponent from '../Components/JobiGuidesArticleComponent';
 import FooterComponent from '../Components/FooterComponent';
+import Images from '../Components/Images';
 
 
 const HomePage = () => {
@@ -69,6 +70,7 @@ const HomePage = () => {
   return (
     <div>
       <NavbarComponent />
+      <section className="homePageHeader">
       <div className="wrapper">
         <h1>
             <span className='findAndHire'>Find & Hire</span>
@@ -78,7 +80,11 @@ const HomePage = () => {
         <h2>We delivered blazing fast & working solution</h2>
         <JobSearchBarComponent />
         <div className='belowSearchBar'><span className='popular'>Popular:</span> Design, Art, Business, Video Editing</div>
+        <div className="absoluteShapeContainer">
+          <img src={Images.headerbackgroundShape} alt="shape for decoration" />
+        </div>
       </div>
+      </section>
       <section className='mostDemanding'>
         <div className="wrapper">
         <div className="mostDemandingHeader">

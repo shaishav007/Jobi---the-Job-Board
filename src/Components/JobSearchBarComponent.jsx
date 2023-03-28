@@ -2,14 +2,14 @@ import React from 'react'
 
 const JobSearchBarComponent = () => {
   return (
-    <div class="flexParent">
-        <form class="searchInput">
-        <div class="searchBar">
-            <label for="occupation"> Occupation</label>
+    <div class="searchbarParent">
+        <form class="searchInputForm">
+          <div class="occupation">
+            <label htmlFor="occupation"> Occupation</label>
             <input type="text"/>
           </div>
           <div class="category">
-            <label for="category"> Category </label>
+            <label htmlFor="category"> Category </label>
             <input type="dropdown"/>
           </div>
           <button class="submit"> search</button>
