@@ -28,3 +28,9 @@ $Black:#0F1620;
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+@mixin breakpoint($size){
+    @media(max-width:$size) {
+        @content;
+    }
+}

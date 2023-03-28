@@ -236,34 +236,160 @@ html {
 
 nav {
   background: #254135;
-  color: white;
+  color: #F5F5F5;
   list-style: none;
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-family: "Gordita";
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 ul {
   padding: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .menu {
   padding: 0;
+  text-transform: capitalize;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+}
+.menu > * {
+  transition-property: scale ease-in-out 500ms;
+}
+.menu > *:hover {
+  transform: scale(1.1);
 }
 
-.loginMenu {
+.loginMenuBigScreen {
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.loginMenuBigScreen > * {
+  transition: scale ease-in-out 500ms;
+}
+.loginMenuBigScreen > *:hover {
+  transform: scale(1.1);
 }
 
 li {
   padding: 5px;
   margin: 5px;
+}
+
+.categoryButton {
+  background: #31795A;
+  color: #D2F34C;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.loginText {
+  color: #D2F34C;
+}
+
+.hireTopTalent {
+  background: #D2F34C;
+  display: inline-block;
+  min-width: 15rem;
+  color: #0F1620;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1.6rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.bigScreenMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: min(100%, 120rem);
+  top: 0%;
+}
+@media (max-width: 1150px) {
+  .bigScreenMenu {
+    display: none;
+  }
+}
+
+.smallScreenMenu {
+  padding-block: 1%;
+  width: 100%;
+  display: none;
+  top: 0%;
+}
+@media (max-width: 1150px) {
+  .smallScreenMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.leftMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  transform: translateY(-5%);
+  transition: scale ease-in-out 1000ms;
+}
+.leftMenu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.loginMenu {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  transition: scale ease-in-out 1000ms;
+  transform: translateY(0%);
+}
+
+.closed {
+  transform: scale(0);
+  display: none;
+}
+
+.rightMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.hamburgerButton {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.hamburgerButton img {
+  width: 100%;
 }
 
 @font-face {

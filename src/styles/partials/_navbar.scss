@@ -7,27 +7,126 @@
 
 nav{
     background:$DarkGreen;
-    color: white;
+    color: $LightGrey;
 
     list-style: none;
     
-    @include setFlex(horizontal,space-between,center,wrap);
-    @include setFonts('Gordita',2rem);
+    @include setFlex(row,space-between,center,wrap);
+    @include setFonts('Gordita',1.6rem);
     
 }
 ul{
     padding:0;
-    display: flex;
+    
+    @include setFlex(row,space-between,center,wrap);
     list-style:none;
 }
 .menu{
     padding:0;
+    text-transform: capitalize;
+    @include setFonts('Gordita',1.6rem);
+
+    &>*{
+        transition-property: scale  ease-in-out 500ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
-.loginMenu{
+.loginMenuBigScreen{
     padding:0;
+    @include setFlex(row,flex-start,flex-start,wrap);
+    &>*{
+        transition: scale  ease-in-out 500ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 
 li{
     padding:5px;
     margin:5px;
+}
+
+.categoryButton{
+    background: $Green;
+    color: $LimeGreen;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.loginText{
+    color: $LimeGreen;
+}
+
+.hireTopTalent{
+    background: $LimeGreen;
+    display: inline-block;
+    min-width: 15rem;
+    color: $Black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 1.6rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+// beyond this are styles for the compressed menus
+
+.bigScreenMenu{
+    @include setFlex(row,space-between,flex-start,nowrap);
+    
+    width: min(100%,120rem);
+    top: 0%;
+    @include breakpoint(1150px){
+        display: none;
+    }
+}
+.smallScreenMenu{
+    padding-block: 1%;
+    width: 100%;
+    display: none;
+    
+    top:0%;
+    @include breakpoint(1150px){
+        @include setFlex(row,space-between,flex-start,nowrap)
+    }
+}
+
+.leftMenu{
+    @include setFlex(column,flex-start,flex-start,wrap);
+
+    
+    transform: translateY(-5%);
+
+    transition: scale  ease-in-out 1000ms;
+
+    .menu{
+        @include setFlex(column,flex-start,flex-start,wrap);
+    }
+}
+
+.loginMenu{
+    @include setFlex(column-reverse,flex-start,flex-end,wrap);
+
+    transition: scale  ease-in-out 1000ms;
+
+   
+    transform: translateY(0%);
+}
+.closed{
+    transform:scale(0);
+    display: none;
+}
+
+.rightMenu{
+    @include setFlex(column,flex-start,flex-end,wrap);
+}
+
+.hamburgerButton{
+    width: 4.8rem;
+    height: 4.8rem;
+
+    img{width: 100%;}
 }
