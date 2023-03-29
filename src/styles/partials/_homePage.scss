@@ -10,7 +10,13 @@
 
 h1{
     
-    @include setFonts('Garamond',5.6rem);
+    @include setFonts('Garamond',clamp(3rem,11vw,9rem));
+    font-weight: 500;
+    line-height: clamp(5rem,12vw,9.5rem);
+    
+    padding-bottom: 0;
+    margin-bottom: 0.5rem;
+
     background: transparent;
     span{
         display: block;
@@ -21,7 +27,9 @@ h1{
 .homePageHeader{
     position: relative;
     background: $DarkGreen;
-    height: clamp(60rem, 150rem - 150vw, 80rem);;
+    height: clamp(75rem, 150rem - 50vw, 85rem);
+
+    padding-block: 5.4rem;
 
     .wrapper{
         @include setFlex(column, flex-start,flex-start,wrap);
@@ -35,16 +43,16 @@ h1{
     .absoluteShapeContainer{
         position: absolute;
         top: 0%;
-        right: 0%;
+        right: 2.5%;
         z-index: 0;
-        width: 44.5%;
+        width: 43.5%;
         height: auto;
 
         img{
             width: 100%;
         }
 
-        @include breakpoint(1120px){
+        @include breakpoint(1350px){
             display: none;
         }
     }
@@ -61,14 +69,19 @@ h1{
 }
 
 h2{
-    color: $LightGrey;
-    @include setFonts('Gordita',2.4rem);
+    color: white;
+    @include setFonts('Gordita',clamp(1.8rem, 4vw, 2.2rem));
+    font-weight: 400;
+    line-height: clamp(2rem,8vw, 4.2rem);
     width: fit-content;
+    margin-block: 3.5rem;
+
 }
 
 .belowSearchBar{
     color: $Green;
     @include setFonts('Gordita',1.6rem);
+    margin-block: 2rem;
 }
 
 .popular{

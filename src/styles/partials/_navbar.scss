@@ -1,7 +1,7 @@
 @import './colorsAndFonts';
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1500px;
     margin:0 auto;
 }
 
@@ -13,12 +13,14 @@
 nav{
     background:$DarkGreen;
     color: $LightGrey;
-
+    
     list-style: none;
     
     @include setFlex(row,space-between,center,wrap);
     @include setFonts('Gordita',1.6rem);
-    
+    line-height: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 ul{
     padding:0;
@@ -27,9 +29,12 @@ ul{
     list-style:none;
 }
 .menu{
-    padding:0;
+    padding-left:6.5rem;
+    width: 47.7rem;
     text-transform: capitalize;
     @include setFonts('Gordita',1.6rem);
+    line-height: 5rem;
+    font-weight: 500;
 
     &>*{
         transition-property: scale  ease-in-out 500ms;
@@ -40,7 +45,12 @@ ul{
 }
 .loginMenuBigScreen{
     padding:0;
-    @include setFlex(row,flex-start,flex-start,wrap);
+    @include setFlex(row,flex-start,center,wrap);
+
+    @include setFonts('Gordita',1.6rem);
+    font-weight: 500;
+    line-height: 3.2rem;
+
     &>*{
         transition: scale  ease-in-out 500ms;
         &:hover{
@@ -48,6 +58,8 @@ ul{
         }
     }
 }
+
+
 
 li{
     padding:5px;
@@ -57,22 +69,28 @@ li{
 .categoryButton{
     background: $Green;
     color: $LimeGreen;
-    padding: 1rem;
+    padding: 0.25rem;
+    margin-left: 4.1rem;
     border-radius: 2rem;
+    width: 13rem;
+    text-align: center;
 }
 
 .loginText{
     color: $LimeGreen;
+    border-left: 1px solid $LimeGreen;
+    padding: 1rem;
 }
 
 .hireTopTalent{
     background: $LimeGreen;
+    line-height: 3rem;
     display: inline-block;
     min-width: 15rem;
     color: $Black;
     font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 1.6rem;
+    padding: 0.75rem 2.25rem;
+    border-radius: 2.5rem;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -82,9 +100,9 @@ li{
 .bigScreenMenu{
     @include setFlex(row,space-between,flex-start,nowrap);
     
-    width: min(100%,120rem);
+    width: min(100%,150rem);
     top: 0%;
-    @include breakpoint(1150px){
+    @include breakpoint(1250px){
         display: none;
     }
 }
@@ -97,7 +115,7 @@ li{
     display: none;
     position: relative;
     top:0%;
-    @include breakpoint(1150px){
+    @include breakpoint(1250px){
         @include setFlex(row,space-between,flex-start,nowrap)
     }
 }
@@ -107,6 +125,9 @@ li{
     position: relative;
     background: $DarkGreen;
 
+    button{
+        border: none;
+    }
     &>*{
         background: $DarkGreen;
     }
@@ -155,6 +176,6 @@ li{
 .hamburgerButton{
     width: 4.8rem;
     height: 4.8rem;
-
+    border: none;
     img{width: 100%;}
 }

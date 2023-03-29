@@ -227,10 +227,10 @@ html {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .wrapper {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -249,6 +249,9 @@ nav {
   flex-wrap: wrap;
   font-family: "Gordita";
   font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 ul {
@@ -262,10 +265,13 @@ ul {
 }
 
 .menu {
-  padding: 0;
+  padding-left: 6.5rem;
+  width: 47.7rem;
   text-transform: capitalize;
   font-family: "Gordita";
   font-size: 1.6rem;
+  line-height: 5rem;
+  font-weight: 500;
 }
 .menu > * {
   transition-property: scale ease-in-out 500ms;
@@ -279,8 +285,12 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.2rem;
 }
 .loginMenuBigScreen > * {
   transition: scale ease-in-out 500ms;
@@ -297,22 +307,28 @@ li {
 .categoryButton {
   background: #31795A;
   color: #D2F34C;
-  padding: 1rem;
+  padding: 0.25rem;
+  margin-left: 4.1rem;
   border-radius: 2rem;
+  width: 13rem;
+  text-align: center;
 }
 
 .loginText {
   color: #D2F34C;
+  border-left: 1px solid #D2F34C;
+  padding: 1rem;
 }
 
 .hireTopTalent {
   background: #D2F34C;
+  line-height: 3rem;
   display: inline-block;
   min-width: 15rem;
   color: #0F1620;
   font-weight: bold;
-  padding: 0.5rem;
-  border-radius: 1.6rem;
+  padding: 0.75rem 2.25rem;
+  border-radius: 2.5rem;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -323,10 +339,10 @@ li {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  width: min(100%, 120rem);
+  width: min(100%, 150rem);
   top: 0%;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
   .bigScreenMenu {
     display: none;
   }
@@ -342,7 +358,7 @@ li {
 .smallScreenMenu > * {
   background: #254135;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
   .smallScreenMenu {
     display: flex;
     flex-direction: row;
@@ -355,6 +371,9 @@ li {
 .leftMenuContainer {
   position: relative;
   background: #254135;
+}
+.leftMenuContainer button {
+  border: none;
 }
 .leftMenuContainer > * {
   background: #254135;
@@ -413,6 +432,7 @@ li {
 .hamburgerButton {
   width: 4.8rem;
   height: 4.8rem;
+  border: none;
 }
 .hamburgerButton img {
   width: 100%;
@@ -424,14 +444,18 @@ li {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .mostDemanding {
   background: #F5F5F5;
 }
+.mostDemanding .wrapper {
+  padding-left: clamp(1rem, 7vw, 10rem);
+}
 
 .mostDemandingHeader {
   background: #F5F5F5;
+  padding-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -442,7 +466,17 @@ li {
   background: #F5F5F5;
   color: #254135;
   font-family: "Garamond";
-  font-size: 7.2rem;
+  font-size: 5.6rem;
+  position: relative;
+  margin: 0;
+}
+.mostDemandingHeader h3 .threeLines {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+}
+.mostDemandingHeader h3 .threeLines img {
+  width: 100%;
 }
 .mostDemandingHeader h4 {
   background: #F5F5F5;
@@ -469,7 +503,7 @@ li {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .getOver50 {
   background: #F5F5F5;
@@ -580,7 +614,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .bestTalentedExpert {
   background: #F5F5F5;
@@ -651,7 +685,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 @font-face {
   font-family: "Gordita";
@@ -659,7 +693,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .testimonialParent {
   padding: 1rem;
@@ -758,7 +792,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .collaboration {
   background: #F5F5F5;
@@ -803,7 +837,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .articleParent {
   background: #F5F5F5;
@@ -851,7 +885,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .jobiGuides {
   background: #F5F5F5;
@@ -896,7 +930,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .matchedJobs {
   background: #F5F5F5;
@@ -948,7 +982,7 @@ h3 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 footer {
   background: #F5F5F5;
@@ -1015,7 +1049,11 @@ footer {
 
 h1 {
   font-family: "Garamond";
-  font-size: 5.6rem;
+  font-size: clamp(3rem, 11vw, 9rem);
+  font-weight: 500;
+  line-height: clamp(5rem, 12vw, 9.5rem);
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
   background: transparent;
 }
 h1 span {
@@ -1025,7 +1063,8 @@ h1 span {
 .homePageHeader {
   position: relative;
   background: #254135;
-  height: clamp(60rem, 150rem - 150vw, 80rem);
+  height: clamp(75rem, 150rem - 50vw, 85rem);
+  padding-block: 5.4rem;
 }
 .homePageHeader .wrapper {
   display: flex;
@@ -1042,15 +1081,15 @@ h1 span {
 .homePageHeader .absoluteShapeContainer {
   position: absolute;
   top: 0%;
-  right: 0%;
+  right: 2.5%;
   z-index: 0;
-  width: 44.5%;
+  width: 43.5%;
   height: auto;
 }
 .homePageHeader .absoluteShapeContainer img {
   width: 100%;
 }
-@media (max-width: 1120px) {
+@media (max-width: 1350px) {
   .homePageHeader .absoluteShapeContainer {
     display: none;
   }
@@ -1069,17 +1108,21 @@ h1 span {
 }
 
 h2 {
-  color: #F5F5F5;
+  color: white;
   font-family: "Gordita";
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 400;
+  line-height: clamp(2rem, 8vw, 4.2rem);
   width: -moz-fit-content;
   width: fit-content;
+  margin-block: 3.5rem;
 }
 
 .belowSearchBar {
   color: #31795A;
   font-family: "Gordita";
   font-size: 1.6rem;
+  margin-block: 2rem;
 }
 
 .popular {
@@ -1095,7 +1138,7 @@ h2 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .searchbarParent {
   width: 100%;
@@ -1106,7 +1149,7 @@ h2 {
   flex-wrap: wrap;
   position: relative;
   z-index: 100;
-  margin-block: 1rem;
+  margin-block: 0;
 }
 
 .searchInputForm {
@@ -1132,12 +1175,26 @@ h2 {
 
 .occupation, .category {
   background: #F5F5F5;
-  padding: 1rem;
+  padding: 1.44rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+.occupation label, .category label {
+  font-family: "Gordita";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+}
+.occupation input, .category input {
+  font-family: "Gordita";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+  background: #F5F5F5;
+  border: none;
 }
 
 .occupation {
@@ -1157,7 +1214,7 @@ h2 {
 
 .category {
   color: #31795A;
-  width: clamp(230px, 25%, 300px);
+  width: clamp(230px, 23%, 300px);
 }
 @media (max-width: 720px) {
   .category {
@@ -1171,12 +1228,15 @@ h2 {
 .submit {
   background: #D2F34C;
   width: clamp(150px, 15%, 250px);
-  padding: 2rem;
+  padding: 3.7rem;
   border-radius: 0 1rem 1rem 0;
   font-family: "Gordita";
   font-size: 1.6rem;
+  line-height: 2.6rem;
   text-transform: uppercase;
   font-weight: bold;
+  height: 100%;
+  border: none;
 }
 @media (max-width: 720px) {
   .submit {
@@ -1191,7 +1251,7 @@ h2 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .jobListingHeader .wrapper {
   display: flex;
@@ -1211,7 +1271,7 @@ h2 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .jobs {
   background: #F5F5F5;
@@ -1255,7 +1315,7 @@ h2 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .jobDetailsHeader {
   text-align: center;
@@ -1330,7 +1390,7 @@ h2 {
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond08-Regular.ttf");
+  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .content404Container {
   background: #F5F5F5;
@@ -1347,10 +1407,6 @@ h2 {
   flex-basis: 50%;
 }
 
-* {
-  outline: 1px solid black;
-}
-
 #root {
   width: 100%;
 }
@@ -1360,6 +1416,6 @@ html {
 }
 
 .wrapper {
-  width: min(100%, 150rem);
+  width: min(100%, 148rem);
   margin: 0 auto;
 }/*# sourceMappingURL=Main.css.map */

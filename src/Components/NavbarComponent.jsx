@@ -15,7 +15,7 @@ const NavbarComponent = () => {
                         <img src={Images.jobiLogo} alt='jobi logo' />
                     </picture>
                 </li>
-                <li className='categoryButton'><img src={Images.categoryIcon} alt=' '/> category</li>
+                <li className='categoryButton'><img src={Images.categoryIcon} alt=' '/> &nbsp; category</li>
                 <li>
                     <ul class="menu">
                         <li>Home</li>

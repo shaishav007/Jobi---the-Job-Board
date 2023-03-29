@@ -88,7 +88,11 @@ const HomePage = () => {
       <section className='mostDemanding'>
         <div className="wrapper">
         <div className="mostDemandingHeader">
-        <h3>Most Demanding<br/> Categories.</h3>
+        <h3>Most Demanding<br/> Categories.
+          <picture className='threeLines'>
+            <img src={Images.threeLines} alt="" />
+          </picture>
+        </h3>
         <h4>
           <span>Together with useful notifications,collaboration  insights, <br/> and improvement tip, etc.
 

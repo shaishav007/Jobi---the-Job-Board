@@ -5,12 +5,12 @@ const JobSearchBarComponent = () => {
     <div class="searchbarParent">
         <form class="searchInputForm">
           <div class="occupation">
-            <label htmlFor="occupation"> Occupation</label>
-            <input type="text"/>
+            <label htmlFor="occupation"> What are you looking for?</label>
+            <input type="text" placeholder='UX Designer'/>
           </div>
           <div class="category">
             <label htmlFor="category"> Category </label>
-            <input type="dropdown"/>
+            <input type="dropdown" placeholder='Web Design'/>
           </div>
           <button class="submit"> search</button>
         </form>
