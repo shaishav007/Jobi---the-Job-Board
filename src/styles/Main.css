@@ -447,26 +447,29 @@ li {
   src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
 }
 .mostDemanding {
-  background: #F5F5F5;
+  background: #F2F9D8;
+  padding-top: 10rem;
 }
 .mostDemanding .wrapper {
-  padding-left: clamp(1rem, 7vw, 10rem);
+  padding: clamp(1rem, 7vw, 10rem);
 }
 
 .mostDemandingHeader {
-  background: #F5F5F5;
-  padding-top: 10rem;
+  background: #F2F9D8;
+  padding-top: 12rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .mostDemandingHeader h3 {
-  background: #F5F5F5;
+  background: #F2F9D8;
   color: #254135;
   font-family: "Garamond";
-  font-size: 5.6rem;
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 7.5rem;
   position: relative;
   margin: 0;
 }
@@ -479,9 +482,11 @@ li {
   width: 100%;
 }
 .mostDemandingHeader h4 {
-  background: #F5F5F5;
+  background: #F2F9D8;
   font-family: "Gordita";
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -489,12 +494,51 @@ li {
   flex-wrap: wrap;
 }
 .mostDemandingHeader h4 > * {
-  background: #F5F5F5;
+  background: #F2F9D8;
+}
+.mostDemandingHeader h4 a {
+  color: #98bd00;
+  padding-block: 2.8rem;
+  text-underline-offset: 1.4rem;
 }
 
 .mostDemandingList {
-  background: #F5F5F5;
+  background: #F2F9D8;
   margin: 0;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mostDemandingList li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  background-color: #B9D640;
+  width: 21rem;
+  height: 24.4rem;
+  border-radius: 25%;
+}
+
+.mostDemandingTitle {
+  font-family: "Gordita";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+}
+
+.jobNumber {
+  font-family: "Gordita";
+  font-size: 1.4rem;
+  line-height: 1.995rem;
+  font-weight: 400;
+  color: rgba(9, 50, 28, 0.5647058824);
 }
 
 @font-face {

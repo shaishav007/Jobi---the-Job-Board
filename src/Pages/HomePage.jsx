@@ -12,7 +12,39 @@ import Images from '../Components/Images';
 
 const HomePage = () => {
 
-  const mostDemandingCategories = ["UI/UX Design","Marketing","Development","Telemarketing","Editing","Accounting"];
+  const mostDemandingCategories = [
+    {
+      icon:Images.uxdesign,
+      title:"UI/UX Design",
+      numberOfJobs:"12k+"
+    },
+
+    {
+      icon:Images.marketing,
+      title:"Marketing",
+      numberOfJobs:"12k+"
+    },
+    {
+      icon:Images.development,
+      title:"Development",
+      numberOfJobs:"12k+"
+    },
+    {
+      icon:Images.telemarketing,
+      title:"Telemarketing",
+      numberofJobs:"12k+"
+    },
+    {
+      icon:Images.editing,
+      title:"Editing",
+      numberofJobs:"12k+"
+    },
+    {
+      icon:Images.accounting,
+      title:"Accounting",
+      numberofJobs:"12k+"
+    }
+  ];
 
   const talentSliderEntries = [
     {name:"Jula Ake",
@@ -97,13 +129,12 @@ const HomePage = () => {
           <span>Together with useful notifications,collaboration  insights, <br/> and improvement tip, etc.
 
           </span>
-          <a href='#'> Explore All Fields </a>
+          <a href='#'> Explore All Fields  </a>
         </h4>
         </div>
         
           
           <ul className='mostDemandingList'>
-            
               { mostDemandingCategories.map((item)=>{
                 return(
                   <li className='mostDemanding'>
@@ -111,8 +142,6 @@ const HomePage = () => {
                   </li>
                 );
               })}
-            
-
           </ul>
         </div>
       </section>
