@@ -60,23 +60,32 @@ const HomePage = () => {
   const companyTestimonials=[
     {
       name:"Monday.com",
-      logoUrl:"Monday logo",
+      logoUrl:Images.mondayLogo,
       testimonial:"Seattle Opera simplifies performance planning with deski eSignature",
       author:"Rashed Kabir",
       authorRole:"Lead Designer",
-      stars:4.5
+      stars:"4.5",
+      rating:"Excellent"
     },
     {
       name:"Monday.com",
-      logoUrl:"Monday logo",
+      logoUrl:Images.mondayLogo,
       testimonial:"Seattle Opera simplifies performance planning with deski eSignature",
       author:"Rashed Kabir",
       authorRole:"Lead Designer",
-      stars:4.5
+      stars:"4.5",
+      rating:"Excellent"
     }
   ];
 
-  const companyLogos=["google","shipBob","dribble","slack","vine","airbnb"];
+  const companyLogos=[
+    Images.airbnbLogo,
+    Images.dribbleLogo,
+    Images.googleLogo,
+    Images.shipBobLogo,
+    Images.slackLogo,
+    Images.vineLogo
+  ];
 
   const jobiGuidesArticles = [
     {
@@ -147,42 +156,55 @@ const HomePage = () => {
       </section>
       <section className="getOver50">
         <div className="wrapper">
-        <div className="flexParent">
-        <div className="placeHolderImage">
-              placeholder image here
-        </div>
+        
+        <picture className="placeHolderImage">
+              <img src={Images.wholeGroup} alt="" className="getOver50Group" />
+        </picture>
         <div className="getOver50Content">
           <h3>Get Over 50,000+<br/> talented experts <br/>on jobi.</h3>
           <h4>A full hybrid workforce management tools are yours to<br/>
               use, as well as access our top 1% of talent.
           </h4>
           <ul className="getOver50Checklist">
-            <li>Seamless searching</li>
-            <li>Get top 3% experts for your project</li>
-            <li>Protected payments system</li>
+            <li>&nbsp; Seamless searching</li>
+            <li>&nbsp; Get top 3% experts for your project</li>
+            <li>&nbsp; Protected payments system</li>
           </ul>
           <a href="#">Post a Job</a>
         </div>
-        </div>
+        
         </div>
       </section>
       <section className="howItWorks">
         <div className="wrapper">
-          <h3>How it Works?</h3>
+          <h3>How it Works?
+            <picture>
+              <img src={Images.threeLinesSvg} alt="" className="threeLines" />
+            </picture>
+          </h3>
           <ul className='howItWorksList'>
             <li>
-              <div className="placeHolderIcon">placeholderIcon</div>
+              <picture className="placeHolderIcon create">
+                
+              </picture>
               <h4>Create Account</h4>
               <h5>Its very easy to open an account and start your journey.</h5>
               
             </li>
+            <picture className='arrowPath'>
+            <img src={Images.arrowPath} alt="" className="threeLines" />
+            </picture>
+            
             <li>
-              <div className="placeHolderIcon">placeholderIcon</div>
+              <picture className="placeHolderIcon complete"></picture>
                 <h4>Complete your profile</h4>
                 <h5>Complete your profile with all the info to get client's attention.</h5>
             </li>
+            <picture className='arrowPath'>
+            <img src={Images.arrowPath} alt="" className="threeLines" />
+            </picture>
             <li>
-              <div className="placeHolderIcon">placeholderIcon</div>
+              <picture className="placeHolderIcon apply"></picture>
                 <h4>Apply job or hire</h4>
                 <h5>Apply & get your preferable jobs with all the requirements and get it. </h5>
             </li>
@@ -192,9 +214,13 @@ const HomePage = () => {
       <section className="bestTalentedExpert">
         <div className="wrapper">
           <div className="bestTalentedHeader">
-            <h3>Find the best talented<br/>expert in jobi.</h3>
+            <h3>Find the best talented<br/>expert in jobi.
+            <picture >
+            <img src={Images.threeLines} alt="" />
+            </picture>
+          </h3>
             <div className="talentButtonWidget">
-              <button className="leftArrow">leftArrow</button><button className="rightArrow">rightArrow</button>
+              <button className="leftArrow">&larr; </button><button className="rightArrow">&rarr;</button>
             </div>
             
           </div>
@@ -217,7 +243,9 @@ const HomePage = () => {
         <div className="trustedHeader">
             <h3>Trusted By Leading <br/> Starups</h3>
             <div className="companyTestimonialButtonWidget">
-            <button className="leftArrow">leftArrow</button><button className="rightArrow">rightArrow</button>
+            
+              <button className="leftArrow">&larr; </button><button className="rightArrow">&rarr;</button>
+            
             </div>
         </div>
         <ul className="companyTestimonials">
@@ -230,7 +258,11 @@ const HomePage = () => {
         <ul className="companyList">
           {
             companyLogos.map((company)=>{
-              return(<li>company Logo</li>)
+              return(<li>
+                <picture className='logoHolder'>
+                  <img src={company} alt="" />
+                </picture>
+              </li>)
             })
           }
         </ul>
@@ -238,16 +270,16 @@ const HomePage = () => {
       </section>
       <section className="collaboration">
         <div className="wrapper">
-        <div className="flexParent">
-        <div className="placeHolderImage">
-              placeholder image here
-        </div>
+        
+        <picture className="placeHolderImage">
+              <img src={Images.collaborationLeft} alt="" className="getOver50Group" />
+        </picture>
         <div className="collaborationContent">
           <h3>Collaboration with <br/> Top Brands.</h3>
-          <h4>We collaborate with  a number of top tier companies on imagining the future of work, have a look.</h4>
-          <a href='#' className='learnMore'>Learn More</a>
+          <h4>We collaborate with  a number of top tier<br/> companies on imagining the future of work,<br/> have a look.</h4>
+          <a href='#' className='learnMore'>Learn More &nbsp; &rarr;</a>
         </div>
-        </div>
+        
         </div>
       </section>
       <section className="jobiGuides">

@@ -1,37 +1,93 @@
 @import '../colorsAndFonts';
-@import '../companyTestimonialComponent';
+
 .trusted{
-    background: $LightGrey;
+    background: white;
+    margin: 18rem 0 0 0;
 }
 .trustedHeader{
-    background: $LightGrey;
-    @include setFlex(row,space-around,flex-end,wrap);
+    background: white;
+    @include setFlex(row,space-between,center,wrap);
     h3{
-        background: $LightGrey;
+        background: white;
         color: $DarkGreen;
+        margin: 0;
     }
 }
 .companyTestimonialButtonWidget{
-    background: $LightGrey;
+    background: white;
     padding: 1rem;
 }
 
 .companyTestimonials{
-    background: $LightGrey;
-    margin: 0;
-    @include setFlex(row,space-around,center,nowrap);
-    
+    background: white;
+    margin: 5rem 0 0 0 ;
+    @include setFlex(row,flex-start,center,nowrap);
+    gap: 1rem;
+    padding: 0;
     &>*{
-        flex-basis: 40%;
-        background: $LightGrey;
+        flex-basis: 50%;
+        margin: 0;
+
+        padding: 3.7rem;
+        border-radius: 3.7rem;
+        border: 0.1rem solid black;
+
+        &:hover{
+            background: $LimeGreen;
+
+            transform: scale(1.01);
+        }
+        
+    }
+    .author{
+        background:transparent;
+        margin: 4rem 0 0 0;
+
+    }
+
+    hr{
+        background: black;
+        margin-block: 3.75rem;
     }
 }
 
 .companyList{
-    background: $LightGrey;
-    margin: 0;
-    @include setFlex(row,space-around,center,nowrap);
+    margin: 15rem 0 0 0;
+    
+    @include setFlex(row,space-between,center,nowrap);
     &>*{
         flex-basis: 40%;
+        
     }
+}
+
+
+.testimonial{
+    margin: 5.2rem 0 0 0;
+
+
+    @include setFonts('Gordita',3.6rem);
+    font-weight: 500;
+    line-height: 5rem;
+}
+
+.authorName{
+    background: transparent;
+    @include setFonts('Gordita',1.6rem);
+    font-weight: 500;
+    line-height: 3.8rem;
+}
+.authorRole{
+    background: transparent;
+    @include setFonts('Gordita',1.6rem);
+    font-weight: 400;
+    line-height: 3.8rem;
+}
+.rating{
+    @include setFlex(row,space-between,center,nowrap);
+    @include setFonts('Gordita',2rem);
+    font-weight: 500;
+    line-height: 3.8rem;
+
+    margin: 0;
 }

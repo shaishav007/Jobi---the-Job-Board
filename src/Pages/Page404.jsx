@@ -8,11 +8,11 @@ const Page404 = () => {
         <section className="content404Container">
             <div className="wrapper">
             <div className="placeHolderImage">
-                placeholerImage
+               
             </div>
             <div className="content404">
                 <h1>
-                    <span className='number'>404</span> <br/>
+                    <span className='number'>404</span> 
                     <span className='text'>Page Not Found</span>
                 </h1>
                 <h2>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,10 +225,16 @@ html {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .wrapper {
   max-width: 1500px;
@@ -441,10 +448,16 @@ li {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .mostDemanding {
   background: #F2F9D8;
@@ -544,67 +557,99 @@ li {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .getOver50 {
-  background: #F5F5F5;
+  background: white;
 }
-.getOver50 .flexParent {
+.getOver50 .wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-wrap: wrap;
+  padding: 0 clamp(1rem, 7vw, 10rem);
+}
+.getOver50 .wrapper .placeHolderImage {
+  padding-block: 5rem;
+  width: 40%;
+}
+.getOver50 .wrapper .placeHolderImage img {
+  width: 100%;
+}
+
+.getOver50Content {
+  background: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.getOver50 .flexParent > * {
-  flex-basis: 50%;
-}
-
-.getOver50Content {
-  background: #F5F5F5;
-  padding: 2rem;
-}
 .getOver50Content h3 {
-  background: #F5F5F5;
+  background: white;
   color: #254135;
   font-family: "Garamond";
-  font-size: 5.2rem;
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 7.5rem;
+  text-align: left;
+  margin: 0;
 }
 .getOver50Content h4 {
-  background: #F5F5F5;
-  color: #31795A;
+  background: white;
+  color: rgba(0, 0, 0, 0.7);
   font-family: "Gordita";
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  margin: 3.2rem 0 0 0;
 }
 .getOver50Content a {
   text-decoration: none;
-  color: #D2F34C;
-  background: #31795A;
+  text-align: center;
+  color: #224A22;
+  background: #D2F34C;
   font-family: "Gordita";
-  font-size: 2rem;
-  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin: 4.1rem 0 0 0;
   padding: 1rem;
+  border-radius: 4.5rem;
   display: block;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 16rem;
 }
 
 .getOver50Checklist {
-  background: #F5F5F5;
+  background: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
+  margin: 2.8rem 0 0 0;
 }
 .getOver50Checklist li {
-  background: #F5F5F5;
+  background: white;
   font-family: "Gordita";
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 5rem;
+  margin: 0;
+}
+.getOver50Checklist li:before {
+  content: "✓";
 }
 
 .howItWorks {
@@ -612,25 +657,51 @@ li {
 }
 .howItWorks .wrapper {
   background: #254135;
+  padding-block: 10rem;
 }
 
 h3 {
   background: #254135;
-  color: #F5F5F5;
+  color: white;
   font-family: "Garamond";
-  font-size: 5.2rem;
+  font-size: 7.2rem;
+  font-size: 7.2rem;
+  line-height: 7.5rem;
   text-align: center;
+  width: wrap-content;
+  position: relative;
+}
+h3 picture {
+  position: absolute;
+  top: -50%;
 }
 
 .howItWorksList {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+}
+.howItWorksList .placeHolderIcon {
+  width: 8rem;
+  height: 8rem;
+}
+.howItWorksList .create {
+  background: url("../assets/images/howItWorks/create.svg");
+}
+.howItWorksList .complete {
+  background: url("../assets/images/howItWorks/complete.svg");
+}
+.howItWorksList .apply {
+  background: url("../assets/images/howItWorks/apply.svg");
 }
 .howItWorksList > * {
   flex-basis: 20%;
+}
+.howItWorksList .arrowPath {
+  flex-basis: 10%;
+  margin-block: 2.5rem;
 }
 .howItWorksList li {
   display: flex;
@@ -641,50 +712,84 @@ h3 {
 }
 .howItWorksList h4 {
   font-family: "Gordita";
-  font-size: 1rem;
-  color: #F5F5F5;
+  font-size: 2.2rem;
+  line-height: 3.135rem;
+  color: white;
   margin-block: 1rem;
+  text-align: center;
 }
 .howItWorksList h5 {
   font-family: "Gordita";
-  font-size: 1rem;
-  color: #31795A;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #81B197;
   margin-block: 1rem;
+  text-align: center;
 }
 
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .bestTalentedExpert {
-  background: #F5F5F5;
+  background: white;
 }
 
 .bestTalentedHeader {
-  background: #F5F5F5;
+  background: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: flex;
 }
 .bestTalentedHeader h3 {
-  background: #F5F5F5;
+  font-family: "Garamond";
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 7.5rem;
+  background: white;
   color: #254135;
+  position: relative;
+}
+.bestTalentedHeader h3 picture {
+  position: absolute;
+  right: -17.5%;
+  top: -40%;
 }
 
 .talentButtonWidget {
-  background: #F5F5F5;
-  color: #F5F5F5;
-  padding: 1rem;
+  background: white;
+  color: white;
+  padding: white;
+}
+
+.leftArrow, .rightArrow {
+  border: none;
+  background: none;
+  margin: 1rem;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+}
+.leftArrow:hover, .rightArrow:hover {
+  background: #D2F34C;
+  transform: scale(2);
 }
 
 .talentSlider {
-  background: #F5F5F5;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -693,136 +798,113 @@ h3 {
   margin: 0;
 }
 .talentSlider > * {
-  flex-basis: 20%;
+  flex-basis: 28rem;
 }
 .talentSlider li {
-  background: #F5F5F5;
+  background: white;
 }
 
 .personContainer {
-  background: #F5F5F5;
+  background: white;
   text-align: center;
 }
 .personContainer h4 {
-  background: #F5F5F5;
+  color: black;
   font-family: "Gordita";
   font-size: 2rem;
-  margin: 0;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 2.7rem;
+  margin: 5rem 0 0 0;
 }
 .personContainer h5 {
-  background: #F5F5F5;
+  color: rgba(0, 0, 0, 0.5);
   font-family: "Gordita";
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.7rem;
   margin: 0;
 }
 
 .personImage {
-  height: 25rem;
   background: lightblue;
-  border-radius: 40%;
+  border-radius: 20rem;
+  height: 40rem;
 }
 
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "Gordita";
-  src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
-@font-face {
-  font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
-}
-.testimonialParent {
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  background: #F5F5F5;
-}
-.testimonialParent hr {
-  height: 1rem;
-  background-color: black;
-}
-
-.testimonial {
-  margin-block: 1rem;
-  background: #F5F5F5;
-  font-family: "Gordita";
-  font-size: 2rem;
-}
-
-.authorName {
-  background: #F5F5F5;
-  font-family: "Gordita";
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.authorRole {
-  background: #F5F5F5;
-  font-family: "Gordita";
-  font-size: 1rem;
-}
-
-.rating {
-  background: #F5F5F5;
-  font-family: "Gordita";
-  font-size: 1rem;
-}
-
 .trusted {
-  background: #F5F5F5;
+  background: white;
+  margin: 18rem 0 0 0;
 }
 
 .trustedHeader {
-  background: #F5F5F5;
+  background: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 .trustedHeader h3 {
-  background: #F5F5F5;
+  background: white;
   color: #254135;
+  margin: 0;
 }
 
 .companyTestimonialButtonWidget {
-  background: #F5F5F5;
+  background: white;
   padding: 1rem;
 }
 
 .companyTestimonials {
-  background: #F5F5F5;
-  margin: 0;
+  background: white;
+  margin: 5rem 0 0 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 0;
 }
 .companyTestimonials > * {
-  flex-basis: 40%;
-  background: #F5F5F5;
+  flex-basis: 50%;
+  margin: 0;
+  padding: 3.7rem;
+  border-radius: 3.7rem;
+  border: 0.1rem solid black;
+}
+.companyTestimonials > *:hover {
+  background: #D2F34C;
+  transform: scale(1.01);
+}
+.companyTestimonials .author {
+  background: transparent;
+  margin: 4rem 0 0 0;
+}
+.companyTestimonials hr {
+  background: black;
+  margin-block: 3.75rem;
 }
 
 .companyList {
-  background: #F5F5F5;
-  margin: 0;
+  margin: 15rem 0 0 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -830,58 +912,114 @@ h3 {
   flex-basis: 40%;
 }
 
+.testimonial {
+  margin: 5.2rem 0 0 0;
+  font-family: "Gordita";
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.authorName {
+  background: transparent;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+}
+
+.authorRole {
+  background: transparent;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-family: "Gordita";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .collaboration {
-  background: #F5F5F5;
+  background: white;
+  margin: 28rem 0 0 0;
 }
-.collaboration .flexParent {
+.collaboration .wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #F5F5F5;
-}
-.collaboration .flexParent > * {
-  flex-basis: 50%;
 }
 
 .collaborationContent {
-  background: #F5F5F5;
+  background: white;
   padding-block: 3rem;
 }
 .collaborationContent h3 {
+  background: transparent;
   color: #254135;
-  background: #F5F5F5;
   text-align: left;
+  font-family: "Garamond";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 6.8rem;
 }
 .collaborationContent h4 {
-  background: #F5F5F5;
   color: #31795A;
-  font-family: "Garamond";
-  font-size: 2rem;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4.3rem;
+  margin: 4.3rem 0 0 0;
 }
 .collaborationContent a {
-  background: #F5F5F5;
   color: black;
-  font-family: "Garamond";
-  font-size: 2rem;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.28rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5rem 0 0 0;
 }
 
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .articleParent {
   background: #F5F5F5;
@@ -926,10 +1064,16 @@ h3 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .jobiGuides {
   background: #F5F5F5;
@@ -971,10 +1115,16 @@ h3 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .matchedJobs {
   background: #F5F5F5;
@@ -1023,10 +1173,16 @@ h3 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 footer {
   background: #F5F5F5;
@@ -1179,10 +1335,16 @@ h2 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .searchbarParent {
   width: 100%;
@@ -1292,10 +1454,16 @@ h2 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .jobListingHeader .wrapper {
   display: flex;
@@ -1312,10 +1480,16 @@ h2 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .jobs {
   background: #F5F5F5;
@@ -1356,10 +1530,16 @@ h2 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .jobDetailsHeader {
   text-align: center;
@@ -1431,24 +1611,74 @@ h2 {
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Garamond";
-  src: url("../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf");
+  src: url("../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Gordita";
+  src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
+  font-weight: 500;
 }
 .content404Container {
-  background: #F5F5F5;
+  background: white;
 }
 .content404Container .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  height: calc(100vh - 15.4rem);
 }
 .content404Container .wrapper > * {
-  background: #F5F5F5;
+  background: white;
   flex-basis: 50%;
+}
+.content404Container .placeHolderImage {
+  background: #F5F5F5;
+  width: 100%;
+  height: 100%;
+}
+.content404Container h1 .number {
+  color: #254135;
+  font-family: "Garamond";
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 13.05rem;
+}
+.content404Container h1 br {
+  height: 0;
+  line-height: 0;
+}
+.content404Container h1 .text {
+  font-family: "Garamond";
+  font-size: 8.2rem;
+  font-weight: 400;
+  line-height: 6.8rem;
+}
+.content404Container h2 {
+  color: black;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+.content404Container .goBack {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #D2F34C;
+  padding: 2.2rem;
+  border-radius: 3.4rem;
+  width: 100%;
+  display: inline-block;
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.137rem;
 }
 
 #root {

@@ -9,12 +9,19 @@ $Black:#0F1620;
 @font-face {
     font-family: 'Gordita';
     src: url('../assets/fonts/gordita-cufonfonts/Gordita\ Regular.otf');
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'Garamond';
-    src: url('../../assets/fonts/eb-garamond/EBGaramond-Medium.ttf');
+    src: url('../assets/fonts/eb-garamond/EBGaramond-VariableFont_wght.ttf');
 }
+@font-face {
+    font-family: 'Gordita';
+    src: url('../assets/fonts/gordita-cufonfonts/Gordita\ Bold.otf');
+    font-weight: 500;
+}
+
 
 @mixin setFonts($selectedFont,$size){
     font-family:$selectedFont;
