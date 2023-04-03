@@ -280,6 +280,9 @@ ul {
   line-height: 5rem;
   font-weight: 500;
 }
+.menu a {
+  color: white;
+}
 .menu > * {
   transition-property: scale ease-in-out 500ms;
 }
@@ -311,14 +314,29 @@ li {
   margin: 5px;
 }
 
+.jobiLink {
+  display: inline-block;
+  transition-duration: 2s;
+}
+.jobiLink:hover {
+  transform: scale(1.1);
+}
+
 .categoryButton {
   background: #31795A;
-  color: #D2F34C;
   padding: 0.25rem;
   margin-left: 4.1rem;
   border-radius: 2rem;
   width: 13rem;
   text-align: center;
+  transition-duration: 0.5s;
+}
+.categoryButton:hover {
+  transform: scale(1.1);
+}
+.categoryButton a {
+  color: #D2F34C;
+  text-decoration: none;
 }
 
 .loginText {
@@ -329,6 +347,7 @@ li {
 
 .hireTopTalent {
   background: #D2F34C;
+  color: black;
   line-height: 3rem;
   display: inline-block;
   min-width: 15rem;
@@ -338,6 +357,7 @@ li {
   border-radius: 2.5rem;
   text-decoration: none;
   text-transform: capitalize;
+  transition-duration: 0.5s;
 }
 
 .bigScreenMenu {
@@ -353,6 +373,9 @@ li {
   .bigScreenMenu {
     display: none;
   }
+}
+.bigScreenMenu a {
+  text-decoration: none;
 }
 
 .smallScreenMenu {
@@ -403,6 +426,7 @@ li {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  color: white;
 }
 
 .loginMenu {
@@ -469,7 +493,6 @@ li {
 
 .mostDemandingHeader {
   background: #F2F9D8;
-  padding-top: 12rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -513,17 +536,21 @@ li {
   color: #98bd00;
   padding-block: 2.8rem;
   text-underline-offset: 1.4rem;
+  transition-duration: 0.5s;
+}
+.mostDemandingHeader h4 a:hover {
+  transform: scale(1.1);
 }
 
 .mostDemandingList {
   background: #F2F9D8;
-  margin: 0;
+  margin: 8rem 0 14.6rem 0;
   gap: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .mostDemandingList li {
   display: flex;
@@ -533,10 +560,15 @@ li {
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
-  background-color: #B9D640;
+  background-color: white;
   width: 21rem;
   height: 24.4rem;
   border-radius: 25%;
+  transition-duration: 0.5s;
+}
+.mostDemandingList li:hover {
+  background-color: #B9D640;
+  transform: scale(1.05);
 }
 
 .mostDemandingTitle {
@@ -578,6 +610,8 @@ li {
   align-items: space-between;
   flex-wrap: wrap;
   padding: 0 clamp(1rem, 7vw, 10rem);
+  margin-top: 18.5rem;
+  margin-bottom: 15.2rem;
 }
 .getOver50 .wrapper .placeHolderImage {
   padding-block: 5rem;
@@ -629,6 +663,10 @@ li {
   border-radius: 4.5rem;
   display: block;
   width: 16rem;
+  transition-duration: 0.5s;
+}
+.getOver50Content a:hover {
+  transform: scale(1.1);
 }
 
 .getOver50Checklist {
@@ -802,6 +840,10 @@ h3 picture {
 }
 .talentSlider > * {
   flex-basis: 28rem;
+  transition-duration: 0.5s;
+}
+.talentSlider > *:hover {
+  transform: scale(1.05);
 }
 .talentSlider li {
   background: white;
@@ -892,6 +934,7 @@ h3 picture {
   padding: 3.7rem;
   border-radius: 3.7rem;
   border: 0.1rem solid black;
+  transition-duration: 0.5s;
 }
 .companyTestimonials > *:hover {
   background: #D2F34C;
@@ -916,6 +959,10 @@ h3 picture {
 }
 .companyList > * {
   flex-basis: 40%;
+  transition-duration: 0.5s;
+}
+.companyList > *:hover {
+  transform: scale(1.1);
 }
 
 .testimonial {
@@ -1011,6 +1058,10 @@ h3 picture {
   text-decoration: none;
   display: inline-block;
   margin: 5rem 0 0 0;
+  transition-duration: 0.5s;
+}
+.collaborationContent a:hover {
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -1101,6 +1152,7 @@ h3 picture {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: 15rem 0 0 0;
 }
 .jobiGuidesHeader h3 {
   color: #254135;
@@ -1118,6 +1170,12 @@ h3 picture {
   border-radius: 1.5rem;
   font-family: "Gordita";
   font-size: 1rem;
+  transition-duration: 0.5s;
+}
+.jobiGuidesHeader a:hover {
+  transform: scale(1.1);
+  background: #254135;
+  color: white;
 }
 
 .jobiGuidesArticles {
@@ -1131,6 +1189,13 @@ h3 picture {
 }
 .jobiGuidesArticles > * {
   flex-basis: 30%;
+  transition-duration: 0.5s;
+}
+.jobiGuidesArticles > *:hover {
+  transform: scale(1.1);
+}
+.jobiGuidesArticles .title {
+  background: #F5F5F5;
 }
 
 @font-face {
@@ -1148,7 +1213,7 @@ h3 picture {
   font-weight: 500;
 }
 .matchedJobs {
-  background: #F5F5F5;
+  background: white;
   margin: 18rem 0 0 0;
 }
 .matchedJobs .wrapper {
@@ -1187,21 +1252,24 @@ h3 picture {
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.8rem;
+  margin: 1.6rem 0 0 0;
 }
 .matchedJobsContent a {
-  background: #D2F34C;
+  background: #DFFA73;
   color: #010101;
-  margin: 0 0 7.3rem 0;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-family: "Circular Std";
+  margin: 4rem 0 7.3rem 0;
+  display: inline-block;
+  padding: 1.8rem;
+  border-radius: 1rem;
+  font-family: "Gordita";
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-weight: 500;
   text-decoration: none;
+  transition-duration: 0.5s;
 }
-.matchedJobsContent a:before {
-  content: url("../assets/images/getMatchedSection/downloadIcon.svg");
+.matchedJobsContent a:hover {
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -1252,12 +1320,22 @@ footer .wrapper {
   background: none;
   border: 1px solid #244034;
   padding: 1.8rem;
+  transition-duration: 0.5s;
+}
+.footerHeader .lookingForJob:hover {
+  transform: scale(1.1);
+  background: #254135;
+  color: white;
 }
 .footerHeader .postAJob {
   color: #383F1E;
   background: #DFFA73;
   padding: 1.8rem;
   border: none;
+  transition-duration: 0.5s;
+}
+.footerHeader .postAJob:hover {
+  transform: scale(1.1);
 }
 
 .titleText {
@@ -1298,6 +1376,12 @@ footer .wrapper {
   line-height: 3rem;
   margin: 0 0 2.3rem 0;
   color: #0E0E0E;
+}
+.footerLists .jobiLogo {
+  transition-duration: 0.5s;
+}
+.footerLists .jobiLogo:hover {
+  transform: scale(1.1);
 }
 
 .emailFieldContainer {
@@ -1402,6 +1486,9 @@ footer .wrapper {
 
 .iconList li {
   font-size: 2rem;
+}
+.iconList li:hover {
+  transform: scale(1.1);
 }
 
 h1 {
@@ -1600,6 +1687,10 @@ h2 {
   font-weight: bold;
   height: 100%;
   border: none;
+}
+.submit:hover {
+  background: #254135;
+  color: white;
 }
 @media (max-width: 720px) {
   .submit {

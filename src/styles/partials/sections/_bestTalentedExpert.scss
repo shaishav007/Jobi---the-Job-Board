@@ -59,6 +59,10 @@
 
     &>*{
         flex-basis: 28rem;
+        transition-duration: 0.5s;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     
     li{

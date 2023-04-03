@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<HomePage/>}/>
+        <Route path='/HomePage' element={<HomePage/>}/>
         <Route path='/jobs/' element={<JobListingPage/>}/>
         <Route path='/jobs/:jobID' element={<JobDetailPage/>}/>
         <Route path='/*' element={<Page404/>}/>  

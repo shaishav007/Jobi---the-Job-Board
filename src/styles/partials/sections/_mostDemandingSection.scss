@@ -13,7 +13,6 @@
 
 .mostDemandingHeader{
     background: #F2F9D8;
-    padding-top: 12rem;
     @include setFlex(row,space-between,flex-start,wrap);
 
     h3{
@@ -58,6 +57,10 @@
             color: #98bd00;
             padding-block: 2.8rem;
             text-underline-offset: 1.4rem;
+            transition-duration: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
          }
     
     }
@@ -65,19 +68,25 @@
 
 .mostDemandingList{
     background: #F2F9D8;
-    margin: 0;
+    margin: 8rem 0 14.6rem 0;
     gap: 2rem;
-    @include setFlex(row, flex-start,center,wrap);
+    @include setFlex(row, flex-start,center,nowrap);
 
     li{
         @include setFlex(column, space-around,center,nowrap);
         padding: 0;
         margin: 0;
-        background-color: #B9D640;
+        background-color: white;
         width: 21rem;
         height: 24.4rem;
         border-radius: 25%;
 
+        transition-duration: 0.5s;
+        &:hover{
+        background-color: #B9D640;
+        transform: scale(1.05);
+        
+        }
     }
 }
 

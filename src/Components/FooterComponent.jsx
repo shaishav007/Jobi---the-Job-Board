@@ -2,6 +2,7 @@ import React from 'react'
 import Images from './Images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
@@ -19,9 +20,9 @@ const FooterComponent = () => {
            </div>
            <div className="footerLists">
             <div className="jobiLogo">
-                <picture>
+                <Link to='/'>
                     <img src={Images.jobiLogoBlack} alt='jobi logo' />
-                </picture>
+                </Link>
             </div>
             <ul className='footerList'>
                 <h5>Products</h5>

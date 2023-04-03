@@ -5,7 +5,8 @@
     .wrapper{
         @include setFlex(row,flex-start,space-between,wrap);
         padding: 0 clamp(1rem, 7vw, 10rem);
-       
+        margin-top: 18.5rem;
+        margin-bottom: 15.2rem;
         .placeHolderImage{
             padding-block: 5rem;
             width: 40%;
@@ -61,6 +62,11 @@
         
         display: block;
         width: 16rem;
+        transition-duration:0.5s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 

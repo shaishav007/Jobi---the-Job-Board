@@ -26,6 +26,13 @@ footer{
         background: none;
         border: 1px solid #244034;
         padding: 1.8rem;
+        transition-duration: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            background: $DarkGreen;
+            color: white;
+
+        }
     }
 
     .postAJob{
@@ -33,6 +40,14 @@ footer{
         background: #DFFA73;
         padding: 1.8rem;
         border: none;
+        transition-duration: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+            
+
+        }
+
+        
 
     }
 
@@ -73,6 +88,13 @@ footer{
 
         margin: 0 0 2.3rem 0;
         color: #0E0E0E;
+    }
+
+    .jobiLogo{
+        transition-duration: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -177,5 +199,9 @@ footer{
 .iconList{
     li{
         font-size: 2rem;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
