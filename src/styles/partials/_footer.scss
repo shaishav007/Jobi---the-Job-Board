@@ -1,43 +1,184 @@
 @import './colorsAndFonts';
 footer{
-    background: $LightGrey;
+    background: white;
+    margin: 10rem 0 0 0;
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
 }
 
 .footerHeader{
     @include setFlex(row,space-around,center,wrap);
-    background:$LightGrey;
+    background:white;
 
     .buttons{
-        background: $LightGrey;
-        padding: 1rem;
+        background:white;
+        padding: 1.8rem;
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 500;
+        line-height: 2rem;
+
         @include setFlex(row,space-around,center,wrap);
+        gap: 2.8rem;
     }
+
+    .lookingForJob{
+        background: none;
+        border: 1px solid #244034;
+        padding: 1.8rem;
+    }
+
+    .postAJob{
+        color: #383F1E;
+        background: #DFFA73;
+        padding: 1.8rem;
+        border: none;
+
+    }
+
 }
 
 .titleText{
-    background: $LightGrey;
+    background: white;
 
     h3{
-        background: $LightGrey;
-        color: $DarkGreen;
+        background: white;
+        color: black;
+
+        margin: 0;
+
+        @include setFonts('Garamond',5.4rem);
+        font-weight: 500;
+        line-height: 6.2rem;
     }
     h4{
-        background: $LightGrey;
-        color: $Green;
+        margin: 0;
+        background: white;
+        color: rgba($color: #000000, $alpha: 0.6);
         @include setFonts('Gordita',2rem);
+        font-weight: 400;
+        line-height: 3.2rem;
     }
 }
 
 .footerLists{
-    @include setFlex(row,space-around,center,wrap);
-    background: $LightGrey;
+    @include setFlex(row,space-around,flex-start,wrap);
+    background: white;
+    margin: 13.7rem 0 0 0;
+
+    h5{
+        @include setFonts('Gordita',2.4rem);
+        font-weight: bold;
+        line-height: 3rem;
+
+        margin: 0 0 2.3rem 0;
+        color: #0E0E0E;
+    }
 }
+
+.emailFieldContainer{
+    background: rgba($color: #000000, $alpha: 0.04);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    @include setFlex(row,center,center,wrap);   
+    
+    label{
+        position: absolute;
+        left: 2.5%;
+        visibility: hidden;
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 400;
+        line-height: 2.28rem;
+        color: rgba($color: #000000, $alpha: 0.25);
+
+        
+    }
+
+    input{
+        flex-grow: 4;
+        background: none;
+        border: none;
+
+        
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 400;
+        line-height: 2.28rem;
+
+        
+    }
+}
+.newsletterForm{
+    
+    p{
+        @include setFonts('Gordita',1.8rem);
+        font-weight: 400;
+        line-height: 3rem;
+    }
+
+    
+    .interestingAndRelevant{
+        @include setFonts('Gordita',1.4rem);
+        font-weight: 400;
+        line-height: 2.6rem;
+
+        color: #979797;
+        margin: 0;
+    }
+    button{
+        @include setFonts('Gordita',1.5rem);
+        font-weight: 500;
+        line-height: 2.137rem;
+
+        padding: 1rem;
+        background: $DarkGreen;
+        border: none;
+        color:white;
+
+        border-radius: 0.5rem;
+    }
+}
+
 .footerList{
-    @include setFlex(column,space-around,center,nowrap);
-    background: $LightGrey;
+    @include setFlex(column,space-around,flex-start,nowrap);
+    background: white;
+    margin: 0;
+
+    li{
+        margin: 0;
+        padding: 0;
+        @include setFonts('Gordita',1.7rem);
+        font-weight: 400;
+        line-height: 4.4rem;
+
+        color: rgba($color: #000000, $alpha: 0.7);
+    }
 }
 
 .copyRightSection{
     @include setFlex(row, space-between,center,wrap);
-    background: $LightGrey;
+    background: white;
+}
+
+.privacyAndContact{
+    @include setFonts('Gordita',1.6rem);
+    font-weight:500;
+    line-height: 2.024rem;
+}
+
+.copyright{
+    @include setFonts('Gordita',1.5rem);
+    font-weight: 400;
+    line-height: 2.137rem;
+
+    color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.iconList{
+    li{
+        
+        img{
+            width: 100%;
+        }
+    }
 }

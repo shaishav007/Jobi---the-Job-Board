@@ -3,10 +3,12 @@
 .matchedJobs{
     background: $LightGrey;
 
-    .flexParent{
+    margin: 18rem 0 0 0;
+    .wrapper{
         @include setFlex(row,space-around,center,wrap);
-        background: $LightGrey;
+        background: url('../assets/images/getMatchedSection/getMatchedBg.png');
 
+        padding: 0 clamp(1rem,7vw,10rem);
         &>*{
             flex-basis: 50%;
         }
@@ -15,13 +17,16 @@
 }
 
 .matchedJobsContent{
-    background:$LightGrey;
-    padding-block: 3rem;
+    background:transparent;
+    padding: 0 0 7.3rem 0;
     
     h3{
-        color:$DarkGreen;
-        background: $LightGrey;
+        margin: 5rem 0 0 0;
+        color:white;
         text-align: left;
+        @include setFonts('Garamond',6.4rem);
+        font-weight: 500;
+        line-height: 6.8rem;
 
         span{
             color: $LimeGreen;
@@ -30,20 +35,29 @@
     }
     
     h4{
-        background:$LightGrey;
-        color: $Green;
-        @include setFonts('Garamond',2rem);
+        color: #81B197;
+        @include setFonts('Gordita',2rem);
+        font-weight: 400;
+        line-height: 3.8rem;
     }
 
     a{
         background:$LimeGreen;
-        color: black;
+        color: #010101;
+
+        margin: 0 0 7.3rem 0;
 
         padding: 1rem;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
 
-        @include setFonts('Gordita',2rem);
+        @include setFonts('Circular Std',1.8rem);
+        line-height: 1.8rem;
+        font-weight: 500;
 
         text-decoration: none;
+
+        &:before{
+            content: url('../assets/images/getMatchedSection/downloadIcon.svg');
+        }
     }
 }

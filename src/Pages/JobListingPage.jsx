@@ -40,54 +40,66 @@ const JobListingPage = () => {
           Job listing
         </h1>
         <h2>We deliver blazing fast and striking work soution</h2>
+        <div className="jobListingWrapper">
+
         <JobSearchBarComponent />
+        </div>
       </div>
       </section>  
       <section className="jobs">
         <div className="wrapper">
-          <div className="filters">
+          <div className="specificFilters">
             <div className="filterTitle">Filter By</div>
-            <form action="submit">
+            <form action="submit" className='filterForm'>
               <input type="
               " className="keywords" />
-              <label htmlFor="categories">Categories</label>
+              <label className='fieldHeading' htmlFor="categories" >Categories</label>
               <input type="text" placeholder='Development'/>
               <fieldset>
                 <legend>Job Type</legend>
 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Fulltime</label><br/>
+                <label htmlFor="Fulltime">&ensp;Fulltime</label><br/>
                 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Fulltime</label><br/>
+                <label htmlFor="Fulltime">&ensp;Hourly Contract</label><br/>
                 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Fulltime</label><br/>
+                <label htmlFor="Fulltime">&ensp;Part Time(20hr/week)</label><br/>
                 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Fulltime</label><br/>
+                <label htmlFor="Fulltime">&ensp;Fixed Price</label><br/>
               </fieldset>
               <fieldset>
                 <legend>Experience level</legend>
 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Beginner(1-3 yrs)</label><br/>
+                <label htmlFor="Fulltime">&ensp;Beginner(1-3 yrs)</label><br/>
                 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Intermediate(1-5 yrs)</label><br/>
+                <label htmlFor="Fulltime">&ensp;Intermediate(1-5 yrs)</label><br/>
                 
                 <input type="checkbox" id="Fulltime" name="Fulltime" value="Fulltime"/>
-                <label htmlFor="Fulltime">Expert(7-10 yrs)</label><br/>
+                <label htmlFor="Fulltime">&ensp;Expert(7-10 yrs)</label><br/>
 
               </fieldset>
 
-              <label htmlFor="salaryRange">Salary Range</label>
+              <label className='fieldHeading' htmlFor="salaryRange">Salary Range</label>
+              <div className="salaryNumberContainer">
+              <input type="text" className='salaryNumber' />
+              &emsp;
+              -
+              &emsp;
+              <input type="text" className='salaryNumber'/>
+              &emsp;
+              USD
+              </div>
               <input type="range" name='salaryRange'/>
 
-              <label htmlFor="categories">Location</label>
+              <label className='fieldHeading' htmlFor="categories">Location</label>
               <input type="dropdown" placeholder='Washington DC'/>
 
-              <label htmlFor="categories">English Fluency</label>
+              <label className='fieldHeading' htmlFor="categories">English Fluency</label>
               <input type="dropdown" placeholder='Fluent'/>
             </form>
           </div>

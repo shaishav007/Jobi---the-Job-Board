@@ -1,4 +1,6 @@
 import React from 'react'
+import Images from './Images';
+
 
 const FooterComponent = () => {
   return (
@@ -15,7 +17,11 @@ const FooterComponent = () => {
                 </div>
            </div>
            <div className="footerLists">
-            <div className="jobiLogo">jobi logo</div>
+            <div className="jobiLogo">
+                <picture>
+                    <img src={Images.jobiLogoBlack} alt='jobi logo' />
+                </picture>
+            </div>
             <ul className='footerList'>
                 <h5>Products</h5>
                 <li>Take the tour</li>
@@ -40,23 +46,28 @@ const FooterComponent = () => {
                 <li>Cookie Policy</li>
             </ul>
             <form className='newsletterForm'>
+                <h5>Newsletter</h5>
                 <p>Join & get important news regularly</p>
-                <label htmlFor="emailField">Enter your email</label>
-                <input type="text" className='emailField'/>
-                <button formAction='submit'>Send</button>
+                <div className="emailFieldContainer">
+
+                    <label htmlFor="emailField">Enter your email</label>
+                    <input type="text" className='emailField'/>
+                    <button formAction='submit'>Send</button>
+                </div>
                 <p className='interestingAndRelevant'>We only send interesting and relevant emails</p>
             </form>
            </div>
            <div className="copyRightSection">
-            <ul className='privacy&Contact'>
+            <ul className='privacyAndContact'>
                 <li>Privacy & Terms</li>
                 <li>Contact Us</li>
             </ul>
             <p className="copyright">Copyright @ 2022 jobi inc</p>
             <ul className='iconList'>
-                <li>facebook</li>
-                <li>insta</li>
-                <li>pinterest</li>
+                <li>dfgdf
+                    
+                </li>
+                
             </ul>
            </div>
         </div>

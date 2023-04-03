@@ -745,6 +745,9 @@ h3 picture {
 .bestTalentedExpert {
   background: white;
 }
+.bestTalentedExpert .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
+}
 
 .bestTalentedHeader {
   background: white;
@@ -848,6 +851,9 @@ h3 picture {
 .trusted {
   background: white;
   margin: 18rem 0 0 0;
+}
+.trusted .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
 }
 
 .trustedHeader {
@@ -1032,10 +1038,12 @@ h3 picture {
 
 .categories {
   background: #F5F5F5;
-  color: #31795A;
+  color: rgba(0, 0, 0, 0.35);
   padding-block: 1rem;
   font-family: "Gordita";
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
   text-transform: capitalize;
 }
 
@@ -1043,21 +1051,26 @@ h3 picture {
   background: #F5F5F5;
   padding-block: 1rem;
   font-family: "Gordita";
-  font-size: 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
 }
 
 .author {
   background: #F5F5F5;
   padding-block: 1rem;
   font-family: "Gordita";
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.8rem;
 }
 .author .name {
   background: #F5F5F5;
   padding-block: 1rem;
   font-family: "Gordita";
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.8rem;
   display: inline-block;
 }
 
@@ -1076,33 +1089,38 @@ h3 picture {
   font-weight: 500;
 }
 .jobiGuides {
-  background: #F5F5F5;
+  background: white;
+}
+.jobiGuides .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
 }
 
 .jobiGuidesHeader {
-  background: #F5F5F5;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .jobiGuidesHeader h3 {
-  background: #F5F5F5;
   color: #254135;
+  background: white;
+  font-family: "Garamond";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 6.8rem;
 }
 .jobiGuidesHeader a {
   background: #D2F34C;
-  color: #31795A;
+  color: #224A22;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
   border-radius: 1.5rem;
   font-family: "Gordita";
   font-size: 1rem;
 }
 
 .jobiGuidesArticles {
-  background: #F5F5F5;
   margin: 0;
   padding: 1rem;
   display: flex;
@@ -1110,6 +1128,9 @@ h3 picture {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.jobiGuidesArticles > * {
+  flex-basis: 30%;
 }
 
 @font-face {
@@ -1128,46 +1149,59 @@ h3 picture {
 }
 .matchedJobs {
   background: #F5F5F5;
+  margin: 18rem 0 0 0;
 }
-.matchedJobs .flexParent {
+.matchedJobs .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: #F5F5F5;
+  background: url("../assets/images/getMatchedSection/getMatchedBg.png");
+  padding: 0 clamp(1rem, 7vw, 10rem);
 }
-.matchedJobs .flexParent > * {
+.matchedJobs .wrapper > * {
   flex-basis: 50%;
 }
 
 .matchedJobsContent {
-  background: #F5F5F5;
-  padding-block: 3rem;
+  background: transparent;
+  padding: 0 0 7.3rem 0;
 }
 .matchedJobsContent h3 {
-  color: #254135;
-  background: #F5F5F5;
+  margin: 5rem 0 0 0;
+  color: white;
   text-align: left;
+  font-family: "Garamond";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 6.8rem;
 }
 .matchedJobsContent h3 span {
   color: #D2F34C;
   background: #254135;
 }
 .matchedJobsContent h4 {
-  background: #F5F5F5;
-  color: #31795A;
-  font-family: "Garamond";
+  color: #81B197;
+  font-family: "Gordita";
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.8rem;
 }
 .matchedJobsContent a {
   background: #D2F34C;
-  color: black;
+  color: #010101;
+  margin: 0 0 7.3rem 0;
   padding: 1rem;
-  border-radius: 2rem;
-  font-family: "Gordita";
-  font-size: 2rem;
+  border-radius: 0.5rem;
+  font-family: "Circular Std";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
   text-decoration: none;
+}
+.matchedJobsContent a:before {
+  content: url("../assets/images/getMatchedSection/downloadIcon.svg");
 }
 
 @font-face {
@@ -1185,7 +1219,11 @@ h3 picture {
   font-weight: 500;
 }
 footer {
-  background: #F5F5F5;
+  background: white;
+  margin: 10rem 0 0 0;
+}
+footer .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
 }
 
 .footerHeader {
@@ -1194,48 +1232,148 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: #F5F5F5;
+  background: white;
 }
 .footerHeader .buttons {
-  background: #F5F5F5;
-  padding: 1rem;
+  background: white;
+  padding: 1.8rem;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2.8rem;
+}
+.footerHeader .lookingForJob {
+  background: none;
+  border: 1px solid #244034;
+  padding: 1.8rem;
+}
+.footerHeader .postAJob {
+  color: #383F1E;
+  background: #DFFA73;
+  padding: 1.8rem;
+  border: none;
 }
 
 .titleText {
-  background: #F5F5F5;
+  background: white;
 }
 .titleText h3 {
-  background: #F5F5F5;
-  color: #254135;
+  background: white;
+  color: black;
+  margin: 0;
+  font-family: "Garamond";
+  font-size: 5.4rem;
+  font-weight: 500;
+  line-height: 6.2rem;
 }
 .titleText h4 {
-  background: #F5F5F5;
-  color: #31795A;
+  margin: 0;
+  background: white;
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Gordita";
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
 }
 
 .footerLists {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: white;
+  margin: 13.7rem 0 0 0;
+}
+.footerLists h5 {
+  font-family: "Gordita";
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin: 0 0 2.3rem 0;
+  color: #0E0E0E;
+}
+
+.emailFieldContainer {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #F5F5F5;
+}
+.emailFieldContainer label {
+  position: absolute;
+  left: 2.5%;
+  visibility: hidden;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.28rem;
+  color: rgba(0, 0, 0, 0.25);
+}
+.emailFieldContainer input {
+  flex-grow: 4;
+  background: none;
+  border: none;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.28rem;
+}
+
+.newsletterForm p {
+  font-family: "Gordita";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.newsletterForm .interestingAndRelevant {
+  font-family: "Gordita";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #979797;
+  margin: 0;
+}
+.newsletterForm button {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.137rem;
+  padding: 1rem;
+  background: #254135;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
 }
 
 .footerList {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
-  background: #F5F5F5;
+  background: white;
+  margin: 0;
+}
+.footerList li {
+  margin: 0;
+  padding: 0;
+  font-family: "Gordita";
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .copyRightSection {
@@ -1244,7 +1382,26 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #F5F5F5;
+  background: white;
+}
+
+.privacyAndContact {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.024rem;
+}
+
+.copyright {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.137rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.iconList li img {
+  width: 100%;
 }
 
 h1 {
@@ -1465,16 +1622,25 @@ h2 {
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Bold.otf");
   font-weight: 500;
 }
+.jobListingHeader {
+  background: #254135;
+}
 .jobListingHeader .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 clamp(1rem, 7vw, 10rem);
 }
 .jobListingHeader h1 {
   color: #F5F5F5;
   text-transform: capitalize;
+}
+
+.jobListingWrapper {
+  width: 100%;
+  margin: 0 0 11.4rem 0;
 }
 
 @font-face {
@@ -1492,14 +1658,32 @@ h2 {
   font-weight: 500;
 }
 .jobs {
-  background: #F5F5F5;
+  background: white;
+  margin: 11.1rem 0 0 0;
 }
 .jobs .wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 0 clamp(1rem, 7vw, 10rem);
+}
+
+.jobCardsContainer {
+  flex-basis: 70%;
+  background: white;
+}
+
+.specificFilters {
+  width: 33rem;
+}
+
+.filterTitle {
+  font-family: "Gordita";
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.6rem;
 }
 
 .filters {
@@ -1510,13 +1694,8 @@ h2 {
   background-color: #F5F5F5;
 }
 
-.jobCardsContainer {
-  flex-basis: 80%;
-  background: #F5F5F5;
-}
-
 .JobCards {
-  background: #F5F5F5;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1525,6 +1704,58 @@ h2 {
 }
 .JobCards > * {
   flex-basis: 45%;
+}
+
+.filterForm {
+  padding: 2.7rem;
+  background: #F5F5F5;
+  margin: 1.8rem 0 0 0;
+}
+.filterForm input {
+  font-family: "Gordita";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  width: 100%;
+}
+.filterForm input[type=checkbox] {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.filterForm legend {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  margin: 3rem 0 0 0;
+}
+.filterForm label {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin: 0.7rem 0 0 0;
+}
+.filterForm .fieldHeading {
+  display: block;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  margin: 1.7rem 0 0 0;
+}
+.filterForm .salaryNumberContainer {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+}
+.filterForm .salaryNumber {
+  width: 2.9rem;
+  height: 2.2rem;
+}
+.filterForm fieldset {
+  border: none;
 }
 
 @font-face {

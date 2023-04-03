@@ -2,23 +2,29 @@
 @import '../colorsAndFonts';
 
 .jobiGuides{
-    background: $LightGrey;
+    background: white;
+
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
 }
 
 .jobiGuidesHeader{
-    background: $LightGrey;
 
-    @include setFlex(row,space-around,center,wrap);
+    @include setFlex(row,space-between,center,wrap);
     h3{
-        background: $LightGrey;
         color: $DarkGreen;
+        background: white;
+        @include setFonts('Garamond',6.4rem);
+        font-weight: 500;
+        line-height: 6.8rem;
     }
 
     a{
-        background: $LimeGreen;
-        color: $Green;
+        background: #D2F34C;
+        color: #224A22;
         text-decoration: none;
-        padding: 1rem;
+        padding: 1rem 2.5rem;
         border-radius: 1.5rem;
         @include setFonts('Gordita',1rem);
 
@@ -26,9 +32,12 @@
 }
 
 .jobiGuidesArticles{
-    background: $LightGrey;
     margin: 0;
     padding: 1rem;
 
     @include setFlex(row,space-around,center,wrap);
+
+    &>*{
+        flex-basis: 30%;
+    }
 }

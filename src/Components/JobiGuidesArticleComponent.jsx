@@ -7,14 +7,14 @@ const JobiGuidesArticleComponent = ({data:{
     author:author
   }}) => {
   return (
-    <div className='articleParent'>
+    <li className='articleParent'>
         <div className="imageContainer">placeholder Image</div>
         <div className="categories">{categories}</div>
         <div className="title">{title}</div>
         <div className="author">
             By  <span className='name'>{author}</span>
         </div>
-    </div>
+    </li>
   )
 }
 

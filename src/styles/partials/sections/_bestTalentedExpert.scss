@@ -1,7 +1,9 @@
 @import '../colorsAndFonts';
 .bestTalentedExpert{
     background: white;
-
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
     
 }
 

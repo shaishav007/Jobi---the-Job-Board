@@ -3,6 +3,10 @@
 .trusted{
     background: white;
     margin: 18rem 0 0 0;
+
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
 }
 .trustedHeader{
     background: white;

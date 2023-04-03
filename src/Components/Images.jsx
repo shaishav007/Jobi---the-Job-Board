@@ -32,4 +32,8 @@ import vineLogo from '../assets/images/companyLogos/vine.png';
 //collaboration section here
 import collaborationLeft from '../assets/images/collaboration/leftSide.png';
 
-export default {jobiLogo,categoryIcon,scribble,hamburgerButton,headerbackgroundShape,threeLines,accounting,development,editing,marketing,telemarketing,uxdesign,wholeGroup,threeLinesSvg,arrowPath,mondayLogo,googleLogo,airbnbLogo,dribbleLogo,shipBobLogo,slackLogo,vineLogo,collaborationLeft};
+//footer stuff
+import jobiLogoBlack from '../assets/images/footer/jobiLogoBlack.png';
+
+
+export default {jobiLogo,categoryIcon,scribble,hamburgerButton,headerbackgroundShape,threeLines,accounting,development,editing,marketing,telemarketing,uxdesign,wholeGroup,threeLinesSvg,arrowPath,mondayLogo,googleLogo,airbnbLogo,dribbleLogo,shipBobLogo,slackLogo,vineLogo,collaborationLeft,jobiLogoBlack};
