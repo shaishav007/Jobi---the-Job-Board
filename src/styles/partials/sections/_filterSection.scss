@@ -10,10 +10,7 @@
     }
 }
 
-.jobCardsContainer{
-    flex-basis: 70%;
-    background:white;
-}
+
 
 .specificFilters{
     width: 33rem;
@@ -37,17 +34,6 @@
     }
 }
 
-
-
-.JobCards{
-    background:white;
-    @include setFlex(row,flex-start,flex-start,wrap);
-
-    &>*{
-        flex-basis: 45%;
-    }
-}
-
 .filterForm{
     padding: 2.7rem;
     background: $LightGrey;
@@ -59,7 +45,25 @@
         line-height: 3.6rem;
         width: 100%;
     }
+    .keywordsContainer{
+        background: white;
+        border: 1px solid black;
+        input{
+            width:85%;
+            border: none;
+        }
 
+        button{
+            font-size: 2rem;
+            
+            width:15%;
+            height: 100%;
+            background: none;
+            border: none;
+        }
+        
+    }
+    
     input[type='checkbox']{
         width: fit-content;
     }

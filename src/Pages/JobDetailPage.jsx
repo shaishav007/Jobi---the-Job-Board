@@ -2,6 +2,11 @@ import React from 'react'
 import FooterComponent from '../Components/FooterComponent'
 import JobComponent from '../Components/JobComponent'
 import NavbarComponent from '../Components/NavbarComponent'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCheckCircle, faCircleCheck, faCopy } from '@fortawesome/free-regular-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 
 const JobDetailPage = () => {
   const thisJob = {
@@ -90,49 +95,73 @@ const JobDetailPage = () => {
           <div className="descriptionContainer">
             <p>{thisJob.date} by <span>{thisJob.company}</span></p>
             <h3>{thisJob.jobTitle}</h3>
-            <div className="socialMediaButtons">
-              <a href="#" className='socialMediaButton'>Facebook</a>
-              <a href="#" className='socialMediaButton'>Twitter</a>
-              <a href="#" className='socialMediaButton'>Copy</a>
+            <ul className="socialMediaButtonList">
+              <li>
+                <a href="#" className='socialMediaButton'>
+                <FontAwesomeIcon icon={faFacebookF}/>&nbsp;
+                Facebook
+              </a>
+              </li>
+              <li>
+                <a href="#" className='socialMediaButton'>
+                <FontAwesomeIcon icon={faTwitter}/>&nbsp;Twitter</a>
+              </li>
+              <li>
+                <a href="#" className='socialMediaButton'>
+                <FontAwesomeIcon icon={faCopy}/>&nbsp;Copy</a>
+              </li>
+            </ul>
+            
+            <div className="overviewContainer">
+              <h4>Overview</h4>
+              <p className="jobOverview">
+                {
+                  thisJob.overview
+                }
+              </p>
             </div>
-
-            <h4>Overview</h4>
-            <p className="jobOverview">
-              {
-                thisJob.overview
-              }
-            </p>
+            <div className="jobDescriptionContainer">
             <h4>Job Description</h4>
-            <div className="jobDescription">
+            <p className="jobDescription">
               {
                 thisJob.jobDescription
               }
+            </p>
             </div>
+            <div className="responsibilitiesContainer">
             <h4>Responsibilities</h4>
             <ul className="jobResponsibilities">
               {
                 thisJob.responsibilities.map((responsibility)=>{
                   return(
-                    <li>{responsibility}</li>
+                    <li><FontAwesomeIcon icon={faCheck}/>&emsp;{responsibility}</li>
                   );
                 })
               }
             </ul>
+            </div>
+            <div className="requiredSkills">
             <h4>Required Skills:</h4>
             <ul className='requiredSkills'>
             {
                 thisJob.requiredSkills.map((skill)=>{
                   return(
-                    <li>{skill}</li>
+                    <li>
+                      &#8226;&emsp;{skill}</li>
                   );
                 })
               }
 
             </ul>
+            </div>
           </div>
           <div className="Summary">
+            <picture className="companyLogo">
+              
+            </picture>
             <h4>{thisCompany.name}</h4>
             <a href="#">Visit Website</a>
+            
               <ul className='summaryList'>
               <li>
                 <h5>Salary</h5>
@@ -168,7 +197,7 @@ const JobDetailPage = () => {
                 })
               }
               </ul>
-              <a href="#">Apply Now</a>
+              <a href="#" className='applyNowButton'>Apply Now</a>
           </div>
         </div>
       </section>
@@ -176,6 +205,9 @@ const JobDetailPage = () => {
         <div className="wrapper">
           <div className="relatedJobsHeader">
           <h3>Related Jobs</h3>
+          <div className="relatedButtonWidget">
+              <button className="leftArrow">&larr; </button><button className="rightArrow">&rarr;</button>
+            </div>
           {/* add the button widget from an earlier page here */}
           </div>
           <ul className="relatedJobsList">

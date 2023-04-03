@@ -1,6 +1,7 @@
 import React from 'react'
 import Images from './Images';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 const FooterComponent = () => {
   return (
@@ -64,8 +65,14 @@ const FooterComponent = () => {
             </ul>
             <p className="copyright">Copyright @ 2022 jobi inc</p>
             <ul className='iconList'>
-                <li>dfgdf
-                    
+                <li>
+                    <FontAwesomeIcon icon={faFacebookF}/>
+                </li>
+                <li>
+                    <FontAwesomeIcon icon={faInstagram}/>
+                </li>
+                <li>
+                    <FontAwesomeIcon icon={faPinterest}/>
                 </li>
                 
             </ul>

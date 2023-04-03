@@ -1,4 +1,7 @@
 import React from 'react'
+import { faBookmark, faCheckSquare } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const JobComponent = ({data:{
     company:company,
@@ -10,7 +13,13 @@ const JobComponent = ({data:{
 
   return (
     <div className='jobParent'>
-        <div className="companyName">{company}</div>
+      
+        <div className="companyName">
+          <div className="name">{company}</div>
+        <button>
+          <FontAwesomeIcon icon={faBookmark}/>
+        </button>
+        </div>
         <div className="jobType">{jobType}</div>
         <div className="title">{jobTitle}</div>
         <div className="salary">{salary}</div>

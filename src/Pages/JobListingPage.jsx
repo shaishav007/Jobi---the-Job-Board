@@ -3,6 +3,8 @@ import JobSearchBarComponent from '../Components/JobSearchBarComponent'
 import NavbarComponent from '../Components/NavbarComponent'
 import FooterComponent from '../Components/FooterComponent'
 import JobComponent from '../Components/JobComponent'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const JobListingPage = () => {
@@ -51,8 +53,12 @@ const JobListingPage = () => {
           <div className="specificFilters">
             <div className="filterTitle">Filter By</div>
             <form action="submit" className='filterForm'>
+              <div className="keywordsContainer">
               <input type="
-              " className="keywords" />
+              " / >
+                <button>
+                <FontAwesomeIcon icon={faSearch} className='searchIcon'/></button>
+              </div>
               <label className='fieldHeading' htmlFor="categories" >Categories</label>
               <input type="text" placeholder='Development'/>
               <fieldset>
@@ -104,7 +110,7 @@ const JobListingPage = () => {
             </form>
           </div>
           <div className="jobCardsContainer">
-            <p>all, 7026 jobs found</p>
+            <p>all, <span>7026</span> jobs found</p>
             <ul className='JobCards'>
             {
               jobArray.map((job)=>{

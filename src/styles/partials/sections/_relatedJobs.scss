@@ -1,0 +1,35 @@
+.relatedJobs{
+    background: $LightGrey;
+    margin: 17rem 0 0 0;
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+        
+    }
+
+    
+    
+}
+.relatedJobsHeader{
+    padding: 8.6rem 0 0 0;
+    @include setFlex(row,space-between,center,nowrap);
+    h3{
+        background: $LightGrey;
+        color: $DarkGreen;
+        margin: 0;
+        @include setFonts('Gordita',4.8rem);
+        font-weight: 500;
+        line-height: 7.3rem;
+    }
+}
+
+.relatedJobsList{
+    margin: 4.8rem 0 0 0;
+    @include setFlex(row,flex-start,flex-start,nowrap);
+    overflow: hidden;
+    padding:0 0 12.1rem 0;
+
+    &>*{
+        background: white;
+        border-radius: 2rem;
+    }
+}

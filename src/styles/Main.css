@@ -1400,8 +1400,8 @@ footer .wrapper {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.iconList li img {
-  width: 100%;
+.iconList li {
+  font-size: 2rem;
 }
 
 h1 {
@@ -1670,11 +1670,6 @@ h2 {
   padding: 0 clamp(1rem, 7vw, 10rem);
 }
 
-.jobCardsContainer {
-  flex-basis: 70%;
-  background: white;
-}
-
 .specificFilters {
   width: 33rem;
 }
@@ -1694,18 +1689,6 @@ h2 {
   background-color: #F5F5F5;
 }
 
-.JobCards {
-  background: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.JobCards > * {
-  flex-basis: 45%;
-}
-
 .filterForm {
   padding: 2.7rem;
   background: #F5F5F5;
@@ -1717,6 +1700,21 @@ h2 {
   font-weight: 400;
   line-height: 3.6rem;
   width: 100%;
+}
+.filterForm .keywordsContainer {
+  background: white;
+  border: 1px solid black;
+}
+.filterForm .keywordsContainer input {
+  width: 85%;
+  border: none;
+}
+.filterForm .keywordsContainer button {
+  font-size: 2rem;
+  width: 15%;
+  height: 100%;
+  background: none;
+  border: none;
 }
 .filterForm input[type=checkbox] {
   width: -moz-fit-content;
@@ -1758,6 +1756,124 @@ h2 {
   border: none;
 }
 
+.jobCardsContainer {
+  flex-basis: 70%;
+  background: white;
+}
+.jobCardsContainer p {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+.jobCardsContainer p span {
+  font-weight: bold;
+  color: black;
+}
+
+.JobCards {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.JobCards > * {
+  flex-basis: 48%;
+}
+
+.jobParent {
+  padding: 3.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+}
+
+.companyName {
+  color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.companyName button {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: 1px solid #E2E2E2;
+  color: #E2E2E2;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.companyName button:hover, .companyName button:focus {
+  background: #31795A;
+}
+
+.title {
+  background: white;
+  color: #244034;
+  font-family: "Gordita";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  margin: 1.7rem 0 0 0;
+}
+
+.salary {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin: 1.7rem 0 0 0;
+}
+
+.locationHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 6.6rem 0 0 0;
+}
+
+.location {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.applyButton {
+  font-family: "Gordita";
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  background: #31795A;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+}
+
+.jobType {
+  background: #F5F5F5;
+  color: #31795A;
+  font-family: "Gordita";
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 6rem 0 0 0;
+}
+
 @font-face {
   font-family: "Gordita";
   src: url("../assets/fonts/gordita-cufonfonts/Gordita Regular.otf");
@@ -1774,47 +1890,179 @@ h2 {
 }
 .jobDetailsHeader {
   text-align: center;
-  color: #F5F5F5;
+  color: white;
+  background: #254135;
+  padding: 0 0 10rem 0;
+}
+.jobDetailsHeader .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .jobDetailsHeader h1 {
+  margin: 4.2rem 0 0 0;
   font-family: "Garamond";
-  font-size: 5.2rem;
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 8.9rem;
 }
 .jobDetailsHeader h2 {
   font-family: "Gordita";
   font-size: 2rem;
-  font-weight: regular;
+  font-weight: 400;
+  line-height: 4.2rem;
+  margin: 2rem 0 0 0;
 }
 
 .jobData {
-  background: #F5F5F5;
+  margin: 10rem 0 0 0;
+  background: white;
 }
 .jobData .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.descriptionContainer {
+  background: white;
+  flex-basis: 65%;
+}
+.descriptionContainer p {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.descriptionContainer p span {
+  font-weight: 500;
+}
+.descriptionContainer h3 {
+  margin: 1.6rem 0 0 0;
+  font-family: "Gordita";
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  color: black;
+  text-align: left;
+}
+.descriptionContainer > * {
+  background: white;
+}
+.descriptionContainer .socialMediaButtonList {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  background: #F5F5F5;
+  margin: 2.5rem 0 0 0;
+  padding: 0;
+  gap: 1rem;
+}
+.descriptionContainer .socialMediaButtonList li {
+  margin: 0;
+  padding: 0;
+}
+.descriptionContainer .socialMediaButtonList a {
+  color: #244034;
+  text-decoration: none;
+  font-family: "Gordita";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #244034;
+}
+.descriptionContainer .socialMediaButtonList a:hover {
+  color: white;
+  background: #244034;
 }
 
-.descriptionContainer {
-  background: #F5F5F5;
-  flex-basis: 65%;
+.overviewContainer, .jobDescriptionContainer, .responsibilitiesContainer, .requiredSkills {
+  margin: 5rem 0 0 0;
 }
-.descriptionContainer > * {
-  background: #F5F5F5;
+.overviewContainer h4, .jobDescriptionContainer h4, .responsibilitiesContainer h4, .requiredSkills h4 {
+  font-family: "Gordita";
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.overviewContainer p, .overviewContainer ul, .jobDescriptionContainer p, .jobDescriptionContainer ul, .responsibilitiesContainer p, .responsibilitiesContainer ul, .requiredSkills p, .requiredSkills ul {
+  margin: 2rem 0 0 0;
+  font-family: "Gordita";
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: rgba(0, 0, 0, 0.75);
+  background: white;
+}
+.overviewContainer ul > *, .jobDescriptionContainer ul > *, .responsibilitiesContainer ul > *, .requiredSkills ul > * {
+  background: white;
+}
+.overviewContainer ul > * svg, .jobDescriptionContainer ul > * svg, .responsibilitiesContainer ul > * svg, .requiredSkills ul > * svg {
+  color: white;
+  background: #4F7B68;
+  border-radius: 50%;
+  padding: 0.3rem;
 }
 
 .Summary {
   background: #F5F5F5;
-  flex-basis: 25%;
+  flex-basis: max(34rem, 25%);
+  border-radius: 2rem;
+  padding: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .Summary > * {
   background: #F5F5F5;
 }
 .Summary h4 {
   background: #F5F5F5;
+  font-family: "Gordita";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.Summary a {
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  background: #31795A;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 3.1rem;
+  border-radius: 2rem;
+}
+.Summary picture {
+  width: 8rem;
+  height: 8rem;
+  background: green;
+  border-radius: 50%;
+}
+.Summary .applyNowButton {
+  margin: 4.7rem 0 0 0;
+  width: max(27.5rem, 25%);
+  padding: 1.4rem 8.9rem;
+  font-family: "Gordita";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.5px;
+  color: #254135;
+  border-radius: 4rem;
+  background: #D2F34C;
 }
 
 .jobResponsibilities, .requiredSkills {
@@ -1834,9 +2082,88 @@ h2 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin: 8.6rem 0 0 0;
 }
 .summaryList > * {
   flex-basis: 45%;
+  text-align: center;
+}
+.summaryList h5 {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: rgba(36, 64, 52, 0.6);
+  margin: 0;
+}
+.summaryList span {
+  font-family: "Gordita";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+.companyTags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2.8rem 0 0 0;
+}
+.companyTags li {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: "Gordita";
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+  padding: 0 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 2rem;
+  margin: 0;
+}
+
+.relatedJobs {
+  background: #F5F5F5;
+  margin: 17rem 0 0 0;
+}
+.relatedJobs .wrapper {
+  padding: 0 clamp(1rem, 7vw, 10rem);
+}
+
+.relatedJobsHeader {
+  padding: 8.6rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.relatedJobsHeader h3 {
+  background: #F5F5F5;
+  color: #254135;
+  margin: 0;
+  font-family: "Gordita";
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 7.3rem;
+}
+
+.relatedJobsList {
+  margin: 4.8rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 0 0 12.1rem 0;
+}
+.relatedJobsList > * {
+  background: white;
+  border-radius: 2rem;
 }
 
 @font-face {
