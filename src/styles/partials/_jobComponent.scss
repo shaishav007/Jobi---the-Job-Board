@@ -1,0 +1,109 @@
+
+.jobCardsContainer{
+    flex-basis: 70%;
+    background:white;
+
+    p{
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 400;
+        line-height: 2.2rem;
+        color: rgba($color: #000000, $alpha: 0.4);
+
+        span{
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+
+.JobCards{
+    background:white;
+    @include setFlex(row,flex-start,flex-start,wrap);
+
+    &>*{
+        flex-basis: 48%;
+    }
+}
+
+.jobParent{
+    padding: 3.8rem;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    border-radius:2rem;
+}
+
+.companyName{
+    color: rgba($color: #000000, $alpha: 0.2);
+
+    @include setFlex(row,space-between,center,wrap);
+    button{
+        width: 4rem;
+        height: 4rem;
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: 1px solid #E2E2E2;
+        color: #E2E2E2;
+        border-radius: 50%;
+        padding: 1rem;
+
+        &:hover,&:focus{
+            background: #31795A;
+        }
+    }
+}
+
+.title{
+    background: white;
+    color: #244034;
+    @include setFonts('Gordita',2.4rem);
+    font-weight:500;
+    line-height: 3.4rem;
+
+    margin: 1.7rem 0 0 0;
+}
+
+.salary{
+    @include setFonts('Gordita',1.5rem);
+    font-weight: 500;
+    line-height: 2.5rem;
+
+    margin: 1.7rem 0 0 0;
+}
+
+.locationHeader{
+    @include setFlex(row,space-between,center, wrap);
+
+    margin: 6.6rem 0 0 0;
+}
+
+.location{
+    @include setFonts('Gordita',1.6rem);
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.applyButton{
+    @include setFonts('Gordita',1.2rem);
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    background: #31795A;
+    color: white;
+    text-transform: uppercase;
+
+    padding: 0.7rem 2rem;
+    border-radius:2rem;
+
+}
+.jobType{
+    background: $LightGrey;
+    color: #31795A;
+    @include setFonts('Gordita',1.3rem);
+    font-weight: 500;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+
+    margin: 6rem 0 0 0;
+}

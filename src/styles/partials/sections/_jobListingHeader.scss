@@ -1,0 +1,26 @@
+@import '../colorsAndFonts';
+
+.jobListingHeader{
+    background: $DarkGreen;
+    .wrapper{
+        @include setFlex(column,center,center,wrap);
+
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
+
+    h1{
+        color: $LightGrey;
+        text-transform: capitalize;
+    }
+
+}
+
+
+.jobListingWrapper{
+    width: 100%;
+    margin: 0 0 11.4rem 0;
+    
+}
+
+
+

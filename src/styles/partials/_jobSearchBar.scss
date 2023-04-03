@@ -1,37 +1,95 @@
 @import './colorsAndFonts';
-.searchInput{
-    @include setFlex(row,center,center,wrap);
+.searchbarParent{
+  width: 100%;
+  @include setFlex(row,flex-start,center,wrap);
+  position: relative;
+  z-index: 100;
+  margin-block: 0;
 
+  
+}
 
+.searchInputForm{
+  
+  border-radius: 1rem;
+  width: 100%;
+  @include setFlex(row,flex-start,center,nowrap);
+  
+  @include setFonts('Gordita',1.6rem);
+
+  @include breakpoint(720px){
+    @include setFlex(column,flex-start,flex-start,nowrap);
+
+  }
+
+  
+  
+}
+
+.occupation,.category{
+  background: $LightGrey;
+  padding: 1.44rem;
+  
+  label{
+    @include setFonts('Gordita',1.4rem);
+    font-weight: 400;
+    line-height: 3.3rem;
+  }
+
+  input{
     @include setFonts('Gordita',2rem);
-  }
-  
-  .searchInput>*{
-    flex-basis:100%;
-  }
-  .submit{
-     
-     flex-basis:max(10rem,50%);
-     
-    flex-grow:1;
-    flex-shrink: 1;
-     background: $LimeGreen;
-  }
-  
-  .searchBar,.category{
+    font-weight:400;
+    line-height: 3.3rem;
     background: $LightGrey;
-    @include setFlex(column,flex-start,flex-start,wrap);
+    border: none;
+  }
+  @include setFlex(column,flex-start,flex-start,wrap)
+}
 
-    flex-basis:max(20rem,100%);
-    border:none;
-    flex-grow:1;
-    label{
-      background: $LightGrey;
-      flex-grow:1;
-    }
-    input{
-      border: none;
-      background: $LightGrey;
-      flex-grow:4;
+.occupation{
+  width: 35%;
+  border-radius: 1rem 0 0 1rem;
+  color: $Green;
+
+  @include breakpoint(720px){
+    width: 100%;
+
+    border-radius: 1rem 1rem 0 0 ;
+    &>*{
+      width: 100%;
     }
   }
+  
+}
+.category{
+  color: $Green;
+  width: clamp(230px,23%,300px);
+
+  @include breakpoint(720px){
+    width: 100%;
+
+    &>*{
+      width: 100%;
+    }
+  }
+}
+
+.submit{
+  background: $LimeGreen;
+  width: clamp(150px,15%,250px);
+  padding: 3.7rem;
+  border-radius: 0 1rem 1rem 0;
+
+  @include setFonts('Gordita',1.6rem);
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100%;
+  border: none;
+  @include breakpoint(720px){
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    
+  }
+  
+}

@@ -1,0 +1,84 @@
+@import '../colorsAndFonts';
+.getOver50{
+    background: white;
+
+    .wrapper{
+        @include setFlex(row,flex-start,space-between,wrap);
+        padding: 0 clamp(1rem, 7vw, 10rem);
+       
+        .placeHolderImage{
+            padding-block: 5rem;
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.getOver50Content{
+    background: white;
+    padding: 2rem;
+
+    @include setFlex(column,flex-start,flex-start,wrap);
+   
+    
+    h3{
+        background: white;
+        color: $DarkGreen;
+        @include setFonts('Garamond',7.2rem);
+        font-weight: 500;
+        line-height: 7.5rem;
+        text-align: left;
+
+        margin: 0;
+    }
+
+    h4{
+        background:white;
+        color: rgba($color: black, $alpha: 0.7);
+        @include setFonts('Gordita',1.8rem);
+        font-weight: 400;
+        line-height: 3.6rem;
+
+        margin: 3.2rem 0 0 0;
+    }
+
+    a{
+        text-decoration: none;
+        text-align: center;
+
+        color: #224A22;
+        background: #D2F34C;
+        
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 500;
+        line-height: 2.5rem;
+        
+        margin: 4.1rem 0 0 0;
+        padding: 1rem;
+        border-radius: 4.5rem;
+        
+        display: block;
+        width: 16rem;
+    }
+}
+
+.getOver50Checklist{
+    background: white;
+    @include setFlex(column, flex-start,flex-start,nowrap);
+
+    margin: 2.8rem 0 0 0;
+    li{
+        background: white;
+        @include setFonts('Gordita',1.8rem);
+        font-weight: 500;
+        line-height: 5rem;
+        margin: 0;
+
+        &:before{
+            content: '\2713';
+        }
+    }
+    
+}

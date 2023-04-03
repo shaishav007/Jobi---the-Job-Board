@@ -1,0 +1,28 @@
+@import '../colorsAndFonts';
+
+.jobDetailsHeader{
+    text-align: center;
+    color: white;
+    background: $DarkGreen;
+
+    padding: 0 0 10rem 0;
+    .wrapper{
+        @include setFlex(column, center, center, wrap);
+    }
+    h1{
+
+        margin: 4.2rem 0 0 0;
+        @include setFonts('Garamond',6.4rem);
+        font-weight: 500;
+        line-height: 8.9rem;
+    }
+
+    h2{
+        @include setFonts('Gordita',2rem);
+        font-weight: 400;
+        line-height: 4.2rem;
+        margin: 2rem 0 0 0;
+    }
+}
+
+

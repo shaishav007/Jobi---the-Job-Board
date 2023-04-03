@@ -1,35 +1,96 @@
 @import '../colorsAndFonts';
+
+
 .mostDemanding{
-    background: $LightGrey;
+    background: #F2F9D8;
+    padding-top: 10rem;
+   
+    .wrapper{
+        
+        padding:clamp(1rem, 7vw, 10rem);
+    }
 }
 
 .mostDemandingHeader{
-    background: $LightGrey;
-    
-    @include setFlex(row,space-between,center,wrap);
+    background: #F2F9D8;
+    padding-top: 12rem;
+    @include setFlex(row,space-between,flex-start,wrap);
 
     h3{
-        background: $LightGrey;
+        background: #F2F9D8;
 
         color: $DarkGreen;
         @include setFonts('Garamond',7.2rem);
+        font-weight: 500;
+        line-height: 7.5rem;
+
+        
+       position: relative;
+
+       margin: 0;
+
+       .threeLines{
+        position: absolute;
+        top: -25%;
+        right: -25%;
+
+            img{
+                width: 100%;
+            }
+       }
 
        
     }
     h4{
-        background: $LightGrey;
+        background: #F2F9D8;
+    
+        
         @include setFonts('Gordita',2rem);
-
+        font-weight: 400;
+        line-height: 3.6rem;
+        
         @include setFlex(column, flex-start,flex-start,wrap);
          
         &>*{
-        background: $LightGrey;
+            background: #F2F9D8;
         }
+        a{
+            color: #98bd00;
+            padding-block: 2.8rem;
+            text-underline-offset: 1.4rem;
+         }
     
     }
 }
 
 .mostDemandingList{
-    background: $LightGrey;
+    background: #F2F9D8;
     margin: 0;
+    gap: 2rem;
+    @include setFlex(row, flex-start,center,wrap);
+
+    li{
+        @include setFlex(column, space-around,center,nowrap);
+        padding: 0;
+        margin: 0;
+        background-color: #B9D640;
+        width: 21rem;
+        height: 24.4rem;
+        border-radius: 25%;
+
+    }
 }
+
+.mostDemandingTitle{
+    @include setFonts('Gordita',1.8rem);
+    line-height: 2.7rem;
+    font-weight: 500;
+}
+
+.jobNumber{
+    @include setFonts('Gordita',1.4rem);
+    line-height: 1.995rem;
+    font-weight: 400;
+    color: #09321C90;
+}
+

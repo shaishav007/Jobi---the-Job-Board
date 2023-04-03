@@ -1,0 +1,43 @@
+@import '../jobiGuidesArticleComponent';
+@import '../colorsAndFonts';
+
+.jobiGuides{
+    background: white;
+
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
+}
+
+.jobiGuidesHeader{
+
+    @include setFlex(row,space-between,center,wrap);
+    h3{
+        color: $DarkGreen;
+        background: white;
+        @include setFonts('Garamond',6.4rem);
+        font-weight: 500;
+        line-height: 6.8rem;
+    }
+
+    a{
+        background: #D2F34C;
+        color: #224A22;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        border-radius: 1.5rem;
+        @include setFonts('Gordita',1rem);
+
+    }
+}
+
+.jobiGuidesArticles{
+    margin: 0;
+    padding: 1rem;
+
+    @include setFlex(row,space-around,center,wrap);
+
+    &>*{
+        flex-basis: 30%;
+    }
+}

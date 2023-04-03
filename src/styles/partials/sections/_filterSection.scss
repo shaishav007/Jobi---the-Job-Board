@@ -1,0 +1,112 @@
+@import '../colorsAndFonts';
+
+.jobs{
+    background: white;
+    margin: 11.1rem 0 0 0;
+    .wrapper{
+        @include setFlex(row,space-between,flex-start,wrap);
+        padding: 0 clamp(1rem,7vw,10rem);
+
+    }
+}
+
+
+
+.specificFilters{
+    width: 33rem;
+}
+
+
+.filterTitle{
+    @include setFonts('Gordita',2.5rem);
+    font-weight:500;
+    line-height:3.6rem;
+}
+
+.filters{
+    flex-basis: 20%;
+
+    background: $LightGrey;
+
+    &>*{
+        background-color: $LightGrey;
+        
+    }
+}
+
+.filterForm{
+    padding: 2.7rem;
+    background: $LightGrey;
+    margin: 1.8rem 0 0 0;
+
+    input{
+        @include setFonts('Gordita',1.3rem);
+        font-weight: 400;
+        line-height: 3.6rem;
+        width: 100%;
+    }
+    .keywordsContainer{
+        background: white;
+        border: 1px solid black;
+        input{
+            width:85%;
+            border: none;
+        }
+
+        button{
+            font-size: 2rem;
+            
+            width:15%;
+            height: 100%;
+            background: none;
+            border: none;
+        }
+        
+    }
+    
+    input[type='checkbox']{
+        width: fit-content;
+    }
+
+    legend{
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 500;
+        line-height: 3.6rem;
+
+        margin: 3rem 0 0 0;
+    }
+
+    label{
+        @include setFonts('Gordita',1.5rem);
+        font-weight: 400;
+        line-height: 2.5rem;
+
+        margin: 0.7rem 0 0 0;
+    }
+
+    
+    .fieldHeading{
+        display: block;
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 500;
+        line-height: 3.8rem;
+
+        margin: 1.7rem 0 0 0;
+    }
+
+
+    .salaryNumberContainer{
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 400;
+        line-height: 3.8rem;
+    }
+
+    .salaryNumber{
+        width: 2.9rem;
+        height: 2.2rem;
+    }
+
+    fieldset{
+        border: none;
+    }
+}

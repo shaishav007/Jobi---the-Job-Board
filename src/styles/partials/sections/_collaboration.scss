@@ -1,0 +1,45 @@
+@import '../colorsAndFonts';
+
+.collaboration{
+    background: white;
+    margin: 28rem 0 0 0;
+    .wrapper{
+        @include setFlex(row,space-between,center,wrap);
+    }
+
+
+}
+
+.collaborationContent{
+    background:white;
+    padding-block: 3rem;
+    
+    h3{
+        background: transparent;
+        color:$DarkGreen;
+        text-align: left;
+
+        @include setFonts('Garamond',6.4rem);
+        font-weight: 500;
+        line-height: 6.8rem;
+    }
+    
+    h4{
+        color: $Green;
+        @include setFonts('Gordita',2.4rem);
+        font-weight: 400;
+        line-height: 4.3rem;
+
+        margin: 4.3rem 0 0 0;
+    }
+
+    a{
+        color: black;
+        @include setFonts('Gordita',1.6rem);
+        font-weight: 500;
+        line-height: 2.28rem;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5rem 0 0 0;
+    }
+}

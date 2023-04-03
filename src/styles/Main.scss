@@ -2,10 +2,13 @@
 @import './partials/navbar';
 @import './partials/homePage';
 @import './partials/jobSearchBar';
+@import './partials/jobListingPage';
+@import './partials/jobDetails';
+@import './partials/page404';
+// *{
+//     outline:1px solid black;
+// }
 
-*{
-    background: $DarkGreen;
-}
 
 
 #root{
@@ -16,6 +19,6 @@ html{
     font-size:62.5%;
 }
 .wrapper{
-    width: min(100%,120rem);
+    width: min(100%,148rem);
     margin: 0 auto;
 }

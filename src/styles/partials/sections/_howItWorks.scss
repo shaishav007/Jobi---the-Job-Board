@@ -1,0 +1,73 @@
+.howItWorks{
+    background: $DarkGreen;
+
+    .wrapper{
+        background: $DarkGreen;
+        padding-block: 10rem;
+    }
+}
+
+h3{
+    background: $DarkGreen;
+    color: white;
+
+    @include setFonts('Garamond',7.2rem);
+    font-size: 7.2rem;
+    line-height: 7.5rem;
+    
+    text-align: center;
+    width: wrap-content;
+    position: relative;
+    
+    picture{
+        position: absolute;
+        top: -50%;
+    }
+}
+
+.howItWorksList{
+    @include setFlex(row,space-around,flex-start,wrap);
+
+    .placeHolderIcon{
+        width: 8rem;
+        height: 8rem;
+    }
+    .create{
+        background: url("../assets/images/howItWorks/create.svg");
+    }
+    .complete{
+        background: url("../assets/images/howItWorks/complete.svg");
+
+    }
+    .apply{
+        background: url("../assets/images/howItWorks/apply.svg");
+    }
+    >*{
+        flex-basis:20%;
+    }
+
+    .arrowPath{
+        flex-basis: 10%;
+        margin-block: 2.5rem;
+    }
+    li{
+        @include setFlex(column,flex-start, center,nowrap);
+
+    }
+    h4{
+        @include setFonts('Gordita',2.2rem);
+        line-height: 3.135rem;
+
+        color: white;
+        margin-block: 1rem;
+        text-align: center;
+    }
+    h5{
+        @include setFonts('Gordita',1.6rem);
+        font-weight:400;
+        line-height: 2.8rem;
+        color: #81B197;
+        margin-block: 1rem;
+        text-align: center;
+    }
+}

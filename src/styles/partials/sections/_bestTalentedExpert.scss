@@ -1,0 +1,96 @@
+@import '../colorsAndFonts';
+.bestTalentedExpert{
+    background: white;
+    .wrapper{
+        padding: 0 clamp(1rem,7vw,10rem);
+    }
+    
+}
+
+.bestTalentedHeader{
+    background: white;
+
+    @include setFlex(row,space-between,center,flex);
+
+    h3{
+        @include setFonts('Garamond',7.2rem);
+        font-weight: 500;
+        line-height: 7.5rem;
+
+        background: white;
+        color: $DarkGreen;
+
+        position: relative;
+
+        picture{
+            position: absolute;
+            right: -17.5%;
+            top: -40%;
+        }
+        
+    }
+}
+
+.talentButtonWidget{
+    background: white;
+    color: white;
+    padding: white;
+}
+
+.leftArrow,.rightArrow{
+    border: none;
+    background:none;
+    margin: 1rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+
+    &:hover{
+        background:#D2F34C;
+        transform: scale(2);
+    }
+}
+
+.talentSlider{
+    background: white;
+    @include setFlex(row,space-around,center,nowrap);
+
+    margin: 0;
+
+    &>*{
+        flex-basis: 28rem;
+    }
+    
+    li{
+        background: white;
+       
+    }
+}
+
+.personContainer{
+    background:white;
+    text-align: center;
+    h4{
+        color: black;
+        @include setFonts('Gordita',2rem);
+        font-weight: 500;
+        line-height: 2.7rem;
+        margin: 5rem 0 0 0;
+        
+    }
+    h5{
+         color: rgba($color: black, $alpha: 0.5);
+         @include setFonts('Gordita',1.6rem);
+         font-weight: 400;
+         line-height: 2.7rem;
+         
+         margin:0;
+
+    }
+}
+.personImage{
+    background: lightblue;
+    border-radius: 20rem;
+    
+    height: 40rem;
+}
