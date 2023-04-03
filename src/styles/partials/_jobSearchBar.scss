@@ -11,7 +11,7 @@
   
   border-radius: 1rem;
   width: 100%;
-  @include setFlex(row,flex-start,center,nowrap);
+  @include setFlex(row,flex-start,flex-start,nowrap);
   
   @include setFonts('Gordita',1.6rem);
 
@@ -22,6 +22,9 @@
 
   
   
+}
+.centered{
+  justify-content: center;
 }
 
 .occupation,.category{
@@ -86,7 +89,7 @@
   border: none;
 
   &:hover{
-    background: $DarkGreen;
+    background: #224A22;
     color: white;
   }
   @include breakpoint(720px){

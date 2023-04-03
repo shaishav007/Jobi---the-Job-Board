@@ -5,6 +5,7 @@ import FooterComponent from '../Components/FooterComponent'
 import JobComponent from '../Components/JobComponent'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 
 const JobListingPage = () => {
@@ -44,7 +45,7 @@ const JobListingPage = () => {
         <h2>We deliver blazing fast and striking work soution</h2>
         <div className="jobListingWrapper">
 
-        <JobSearchBarComponent />
+        <JobSearchBarComponent centered={true}/>
         </div>
       </div>
       </section>  
@@ -110,12 +111,12 @@ const JobListingPage = () => {
             </form>
           </div>
           <div className="jobCardsContainer">
-            <p>all, <span>7026</span> jobs found</p>
+            <p>all, <span>3</span> jobs found</p>
             <ul className='JobCards'>
             {
               jobArray.map((job)=>{
                 return(
-                <li><JobComponent data={job}/></li>
+                <Link to='/jobs/1234'><JobComponent data={job}/></Link>
                 )
               })
             }
