@@ -2,7 +2,7 @@ import jobiLogo from '../assets/images/Logo.png';
 import categoryIcon from '../assets/images/category.png';
 import scribble from '../assets/images/scribble.png';
 import hamburgerButton from '../assets/images/hamburger.png';
-import headerbackgroundShape from '../assets/images/headerbackgroundShape.png';
+import headerbackgroundShape from '../assets/images/headerBackgroundShape.png';
 import threeLines from '../assets/images/threeLines.png';
 
 // most demanding section
