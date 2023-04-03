@@ -1,18 +1,24 @@
 import React from 'react'
 
-const JobSearchBarComponent = () => {
+const JobSearchBarComponent = ({centered:centered}) => {
   return (
     <div class="searchbarParent">
-        <form class="searchInputForm">
-          <div class="occupation">
+        <form className={
+          centered?
+          "searchInputForm centered"
+          :"searchInputForm"
+        }
+
+        >
+          <div className="occupation">
             <label htmlFor="occupation"> What are you looking for?</label>
             <input type="text" placeholder='UX Designer'/>
           </div>
-          <div class="category">
+          <div className="category">
             <label htmlFor="category"> Category </label>
             <input type="dropdown" placeholder='Web Design'/>
           </div>
-          <button class="submit"> search</button>
+          <button className="submit"> search</button>
         </form>
     </div>
   )

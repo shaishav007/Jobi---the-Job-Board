@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Images from './Images'
 
 const NavbarComponent = () => {
@@ -11,17 +12,24 @@ const NavbarComponent = () => {
         <nav className='bigScreenMenu'>
             <ul>
                 <li>
-                    <picture>
+                    <Link className='jobiLink' to='/HomePage'>
                         <img src={Images.jobiLogo} alt='jobi logo' />
-                    </picture>
+                    </Link>
                 </li>
-                <li className='categoryButton'><img src={Images.categoryIcon} alt=' '/> &nbsp; category</li>
+                <li className='categoryButton'>
+                    <Link to='/HomePage#mostDemanding'>
+                    
+                    <img src={Images.categoryIcon} alt=' '/> &nbsp; category
+                    
+                    </Link>
+                    
+                </li>
                 <li>
                     <ul class="menu">
-                        <li>Home</li>
-                        <li>Job</li>
-                        <li>explore</li>
-                        <li>contact</li>
+                        <li><Link to='/'> Home</Link></li>
+                        <li><Link to='/jobs'>Job</Link></li>
+                        <li><Link to='/jobs'>explore</Link></li>
+                        <li><a href='https://www.linkedin.com/in/shaishavvashi'>contact</a></li>
                         <li>pages</li>
                     </ul>
                 </li>
@@ -33,7 +41,7 @@ const NavbarComponent = () => {
             <ul className="loginMenuBigScreen">
                 <li>Post Job</li>
                 <li className="loginText">Login</li>
-                <li><a href='#' className="hireTopTalent">Hire top Talents</a></li>
+                <li><Link to='/HomePage#bestTalented' className="hireTopTalent">Hire top Talents</Link></li>
             </ul>
 
         </nav>

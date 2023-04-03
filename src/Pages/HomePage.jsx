@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef,useEffect } from 'react';
 import NavbarComponent from '../Components/NavbarComponent';
 import JobSearchBarComponent from '../Components/JobSearchBarComponent';
 import MostDemandingComponent from '../Components/MostDemandingComponent';
@@ -8,9 +8,23 @@ import CompanyTestimonialComponent from '../Components/CompanyTestimonialCompone
 import JobiGuidesArticleComponent from '../Components/JobiGuidesArticleComponent';
 import FooterComponent from '../Components/FooterComponent';
 import Images from '../Components/Images';
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = () => {
+
+  const mostDemandingRef = useRef(null);
+  const bestTalentedRef= useRef(null);
+
+  useEffect(() => {
+    if (mostDemandingRef.current) {
+      mostDemandingRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    else if (bestTalentedRef.current) {
+      bestTalentedRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   const mostDemandingCategories = [
     {
@@ -126,7 +140,7 @@ const HomePage = () => {
         </div>
       </div>
       </section>
-      <section className='mostDemanding'>
+      <section className='mostDemanding' id='mostDemanding' ref={mostDemandingRef}>
         <div className="wrapper">
         <div className="mostDemandingHeader">
         <h3>Most Demanding<br/> Categories.
@@ -138,7 +152,7 @@ const HomePage = () => {
           <span>Together with useful notifications,collaboration  insights, <br/> and improvement tip, etc.
 
           </span>
-          <a href='#'> Explore All Fields  </a>
+          <Link to='/jobs'> Explore All Fields  </Link>
         </h4>
         </div>
         
@@ -211,7 +225,7 @@ const HomePage = () => {
           </ul>
         </div>
       </section>
-      <section className="bestTalentedExpert">
+      <section className="bestTalentedExpert" id="bestTalented" ref={bestTalentedRef}>
         <div className="wrapper">
           <div className="bestTalentedHeader">
             <h3>Find the best talented<br/>expert in jobi.
@@ -305,7 +319,9 @@ const HomePage = () => {
         <div className="matchedJobsContent">
           <h3>Get your <br/> <span>Matched Jobs</span> in a <br/> few minutes.</h3>
           <h4>Find your dream job & earn more from world leading brands. Upload your CV now.</h4>
-          <a href='#' className='uploadCV'>Upload your CV</a>
+          <Link to='/inConstruction' className='uploadCV'>
+            <FontAwesomeIcon icon={faUpload}/>&emsp;
+            Upload your CV</Link>
         </div>
         
         </div>

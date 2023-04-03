@@ -1,5 +1,6 @@
 import React from 'react'
 // import Images from './Images'
+
 const MostDemandingComponent = ({data:data}) => {
 
 
@@ -8,8 +9,10 @@ const MostDemandingComponent = ({data:data}) => {
       <div className="mostDemandingIcon">
         <img src={data.icon} alt="asdfa" />
       </div>
+      
       <div className='mostDemandingTitle'> {data.title}</div>
       <div className="jobNumber">{data.numberOfJobs} jobs</div>
+      
     </>
   )
 }

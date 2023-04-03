@@ -35,6 +35,10 @@ ul{
     @include setFonts('Gordita',1.6rem);
     line-height: 5rem;
     font-weight: 500;
+    a{
+
+        color: white;
+    }
 
     &>*{
         transition-property: scale  ease-in-out 500ms;
@@ -65,15 +69,33 @@ li{
     padding:5px;
     margin:5px;
 }
-
+.jobiLink{
+    display: inline-block;
+    transition-duration: 2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
 .categoryButton{
     background: $Green;
-    color: $LimeGreen;
+    
     padding: 0.25rem;
     margin-left: 4.1rem;
     border-radius: 2rem;
     width: 13rem;
     text-align: center;
+
+    transition-duration: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    a{
+        color: $LimeGreen;
+        text-decoration: none;
+
+        
+    }
 }
 
 .loginText{
@@ -84,6 +106,7 @@ li{
 
 .hireTopTalent{
     background: $LimeGreen;
+    color: black;
     line-height: 3rem;
     display: inline-block;
     min-width: 15rem;
@@ -93,6 +116,9 @@ li{
     border-radius: 2.5rem;
     text-decoration: none;
     text-transform: capitalize;
+
+    transition-duration: 0.5s;
+
 }
 
 // beyond this are styles for the compressed menus
@@ -100,10 +126,16 @@ li{
 .bigScreenMenu{
     @include setFlex(row,space-between,flex-start,nowrap);
     
+    
     width: min(100%,150rem);
     top: 0%;
     @include breakpoint(1250px){
         display: none;
+    }
+
+    a{
+        text-decoration: none;
+        
     }
 }
 .smallScreenMenu{
@@ -145,6 +177,7 @@ li{
 
     .menu{
         @include setFlex(column,flex-start,flex-start,wrap);
+        color: white;
     }
 }
 

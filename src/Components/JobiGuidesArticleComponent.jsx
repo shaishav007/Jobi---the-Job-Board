@@ -8,7 +8,7 @@ const JobiGuidesArticleComponent = ({data:{
   }}) => {
   return (
     <li className='articleParent'>
-        <div className="imageContainer">placeholder Image</div>
+        <div className="imageContainer"></div>
         <div className="categories">{categories}</div>
         <div className="title">{title}</div>
         <div className="author">
